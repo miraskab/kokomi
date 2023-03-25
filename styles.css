@@ -1,0 +1,119 @@
+html, body {
+    background-color: #232024;
+    color: #f5f6f7;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif, verdana;
+    width: 100%;
+    min-width: 580px;
+    --text-color: rgb(249, 237, 252);
+    --header-color: rgb(117, 130, 234);
+    --main-color: rgb(103, 150, 243);
+}
+div {
+    padding: 0;
+    margin: 0;
+}
+.content {
+    width: 670px;
+    min-width: 450px;
+    background-color: rgba(12, 12, 12, 0.9);
+    margin: 0;
+    padding: 0 35px;
+}
+
+#main-introduction {
+    background-image: url(images/5.png);
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+}
+.main-section {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text-color);
+    padding: 0;
+    margin: 0 10px;
+}
+h1 {
+    margin: 0 auto;
+    text-align: center;
+    margin: 20px 0;
+    background-color: var(--header-color);
+    padding: 20px;
+    color: white;
+    border-radius: 15px;;
+}
+
+
+a {
+    color: #7582EA;
+    text-decoration: none;
+}
+
+#img-div {
+    margin: 15px auto 10px auto;
+    width: 70%;
+    min-width: 300px;
+    text-align: center;
+    display: block;
+    justify-content: space-between;
+    background-color: var(--main-color);
+    padding: 0 0 15px 0;
+}
+
+#image {
+    margin: 0 auto;
+    max-width: 100%;
+    min-width: 350px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+#pros {
+    grid-area: pros;
+}
+#cons {
+    grid-area: cons;
+}
+#pros, #cons {
+    display: flex;
+    align-items: center;
+}
+.table {
+    display: grid;
+    grid-template-areas: 
+        'pros .'
+        'pros .'
+        'pros .'
+        'pros .'
+        'pros .'
+        'pros .'
+        'pros .'
+        'pros .'
+        'cons .'
+        'cons .';
+    border: 2px var(--main-color) solid;
+}
+.table > div {
+    text-align: left;
+    vertical-align: middle  ;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid var(--main-color);
+
+    padding: 20px;
+}
+@media only screen and (max-width: 600px) {
+    .content {
+      width: 350px;
+      min-width: none;
+    }
+  }
