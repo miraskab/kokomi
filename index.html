@@ -7,55 +7,319 @@
     
     <link rel='stylesheet' id='astra-google-fonts-css' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro%3Anormal%2C400%7CMontserrat%3A600%2C700&#038;display=fallback&#038;ver=3.9.2' media='all' />
     <link rel='stylesheet' id='astra-google-fonts-css' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro%3Anormal%2C400%7CMontserrat%3A600%2C700&#038;display=fallback&#038;ver=3.9.2' media='all' />
+    <script src="script.js"></script>
 
     <title>Tribute</title>
   </head>
   <body>
     <main id="main">
-      <section class="main-section" id="main-introduction">
-        <div class="content" name="introduction">
+      
+      <section class="main-section" id="introduction-talents">
+        
+        <div class="content" id="introduction">
           <h1>Introduction</h1>
 
           <div id="description">
-              <p class="text"><b>Sangonomiya Kokomi</b> - The Divine Priestess and Supreme Leader of Watatsumi Island. Just like how she is versatile in handling military strategies and domestic affairs on her island, she is equally as busy in regards to her in-game capabilities: A healer, AoE Hydro applier, buffer, and on-field or off-field damage dealer. Enabling both vast role diversity and role compression, this affords her a spot in many teams.</p>
-              <br>
-              <p class="text">Truthfully, she can also be considered a victim of many misunderstandings and misinformation. Due to her unique scaling and diverse capabilities, surface level analysis and opinions have plagued her characterisation since her release, and her strengths have only appreciated in worth and understanding as time has gone by.</p>
-              <br>
-              <p class="text">This guide aims to explain Kokomi's complexities and allow players to better utilize the Divine Priestess of Watatsumi Island.</p>
+            <br>
+            <p class="text">Truthfully, she can also be considered a victim of many misunderstandings and misinformation. Due to her unique scaling and diverse capabilities, surface level analysis and opinions have plagued her characterisation since her release, and her strengths have only appreciated in worth and understanding as time has gone by.</p>
+            <br>
+            <p class="text"><b>Sangonomiya Kokomi</b> - The Divine Priestess and Supreme Leader of Watatsumi Island. Just like how she is versatile in handling military strategies and domestic affairs on her island, she is equally as busy in regards to her in-game capabilities: A healer, AoE Hydro applier, buffer, and on-field or off-field damage dealer. Enabling both vast role diversity and role compression, this affords her a spot in many teams.</p>
+            <p class="text">This guide aims to explain Kokomi's complexities and allow players to better utilize the Divine Priestess of Watatsumi Island.</p>
           </div>
 
           <div id="img-div">
-              <img id="image" src="https://cdn.donmai.us/original/d0/52/__sangonomiya_kokomi_genshin_impact_drawn_by_nagikiho__d052d49becbf0e7e45b1a06745454819.jpg">
-              <br>
-              <figcaption id="img-caption">Kokomi has spotted a feral Hutao on life support.</figcaption>
+            <img id="image" src="https://cdn.donmai.us/original/d0/52/__sangonomiya_kokomi_genshin_impact_drawn_by_nagikiho__d052d49becbf0e7e45b1a06745454819.jpg">
+            <br>
+            <figcaption id="img-caption">Kokomi has spotted a feral Hutao on life support.</figcaption>
           </div>
-          
-          <h1>Pros & Cons</h1>
+          <br>
+          <!-- <h2>Pros & Cons</h2> -->
           <div class="text table" id="pros-cons">
-              <div id="pros">Pros</div>
-              <div class="pros-item">Wide skill set — both in role variety and role compression.</div>
-              <div class="pros-item">In particular, the paladin archetype (healing and dealing damage) is a rare and sought after playstyle for many players to get the job done with comfort.</div>
-              <div class="pros-item">Consistent Hydro application in a wide AoE is another key and sought after role.</div>
-              <div class="pros-item">Elemental Skill being cast right in front of the player model is quite synergistic with other character abilities and allows very controlled setup sequences.</div>
-              <div class="pros-item">Has synergy with an incredible number of teammates. Accounts are almost guaranteed to have multiple teams available.</div>
-              <div class="pros-item">Incredibly fast animations allow for fast setups and more efficiency.</div>
-              <div class="pros-item">Many weapons at her disposal, including several F2P options.</div>
-              <div class="pros-item">Artifact farming can be streamlined due to not needing CRIT; fewer stats to seek out.</div>
-              <div id="cons">Cons</div>
-              <div class="cons-item">Teams generally utilise a few of her roles. Investments in certain areas can be useful or useless depending on the team. This includes talents, weapons, artifacts and constellations.</div>
-              <div class="cons-item">Despite artifact farming being streamlined, CRIT stats have no value, meaning a reduced amount of useful rolls. This can also limit her damage ceiling.</div>
+            <div class="table-title">Pros & Cons</div>
+            <div id="pros">Pros</div>
+            <div class="pros-item">Wide skill set — both in role variety and role compression.</div>
+            <div class="pros-item">In particular, the paladin archetype (healing and dealing damage) is a rare and sought after playstyle for many players to get the job done with comfort.</div>
+            <div class="pros-item">Consistent Hydro application in a wide AoE is another key and sought after role.</div>
+            <div class="pros-item">Elemental Skill being cast right in front of the player model is quite synergistic with other character abilities and allows very controlled setup sequences.</div>
+            <div class="pros-item">Has synergy with an incredible number of teammates. Accounts are almost guaranteed to have multiple teams available.</div>
+            <div class="pros-item">Incredibly fast animations allow for fast setups and more efficiency.</div>
+            <div class="pros-item">Many weapons at her disposal, including several F2P options.</div>
+            <div class="pros-item">Artifact farming can be streamlined due to not needing CRIT; fewer stats to seek out.</div>
+            <div id="cons">Cons</div>
+            <div class="cons-item">Teams generally utilise a few of her roles. Investments in certain areas can be useful or useless depending on the team. This includes talents, weapons, artifacts and constellations.</div>
+            <div class="cons-item">Despite artifact farming being streamlined, CRIT stats have no value, meaning a reduced amount of useful rolls. This can also limit her damage ceiling.</div>
           </div>
         </div>
 
-        <div class="content" name="talents">
+        <div class="content" id="talents-breakdown">
           <h1>Talents breakdown</h1>
-
-        </div>
           
+          <div class="text table" id="talents">
+            <div class="table-name talents-name" id="talents-name0"><b>Normal Attack</b></div>
+            <div class="table-name talents-name" id="talents-name1"><b>Elemental Skill</b></div>
+            <div class="table-name talents-name" id="talents-name2"><b>Elemental Burst</b></div>
+            <div class="table-name talents-name" id="talents-name3"><b>Ascension 1 Passive</b></div>
+            <div class="table-name talents-name" id="talents-name4"><b>Ascension 4 Passive</b></div>
+            <div class="table-name talents-name" id="talents-name5"><b>Unique Passive</b></div>
+ 
+            <!-- 0th item -->
+            <div class="table-item talents-item" id="talents-item0">
+              <div class="item-header">
+                <img src="images/talents/normal-attack.webp">
+                <header><b>Normal Attack |</b> <em>The Shape of Water</em></header>
+              </div>
+              <div class="item-body">
+                <div class="item-description">
+                  <div id="talents-item0-description" class="pressable">
+                    <div id="talents-item0-description-rotating" class="rotating"><b>></b></div>
+                    <div><b>Talent Description</b></div>
+                  </div>
+                  <div id="talents-item0-description-child" class="pressable-child" style="display: none;">
+                    <div>
+                      <p><b>Normal Attack</b></p>
+                      <p>Performs up to 3 consecutive attacks that take the form of swimming fish, dealing <b>Hydro DMG.</b></p>
+                    </div>
+                    <div>
+                      <p><b>Charged Attack</b></p>
+                      <p>Consumes a certain amount of Stamina to deal <b>AoE Hydro DMG</b> after a short casting time.</p>
+                    </div>
+                    <div>
+                      <p><b>Plunging Attack</b></p>
+                      <p>Gathering the might of Hydro, Kokomi plunges towards the ground from mid-air, damaging all opponents in her path. Deals <b>AoE Hydro DMG</b> upon impact with the ground.</p>
+                    </div>
+                  </div>
+                </div>
+                <p>A 3-hit Normal Attack combo and AoE Charged Attack. Normal Attacks are <b>projectiles</b> with very small AoE. Her Charged Attack has a larger AoE and uses a separate Internal Cooldown for Hydro application. Therefore it can be useful for shield breaking or maintaining Hydro auras.</p>
+                <p>However, the usefulness of these attacks is a separate discussion to the value of its Talent scaling.</p>
+                <p>It is important to note that Kokomi's <b>basic attacks have two sets of scaling</b>. This talent scales off ATK and is largely an insignificant portion of her on-field damage output, which her Elemental Burst talent has more relevance towards. For example, at Talent Level 9 it can account for around 9% of her total damage in a Mono Hydro team. Past a bare minimum, investment in this talent is of the lowest priority.  </p>
+                <p>With Constellation 1, the 3rd hit of her Normal Attack string will supply an additional attack with a fixed scaling based on her Max HP, although the extra hit is not considered a Normal Attack. Due to its fixed scaling nature, having this Constellation can further diminish the benefits of leveling this talent. (see <a>Talent Level Priority section</a> for more)</p>
+                <p>As with all Catalyst users, ATK SPD buffs like the 10% buff via her Constellation 4 act as direct multipliers to Normal Attack spam, provided she does not get interrupted.</p>
+                <div class="subtitle"><p>“The Shape of Water” is a reference to 孫子兵法 (Sun Tzu's The Art of War).</p> <p>Water has no constant shape.</p></div>
+              </div>
+            </div>
+
+            <!-- 1st item -->
+            <div class="table-item talents-item" id="talents-item1">
+              <div class="item-header">
+                <img src="images/talents/elemental-skill.webp">
+                <header><b>Elemental Skill |</b> <em>Kurage's Oath</em></header>
+              </div>
+              <div class="item-body">
+                <div class="item-description">
+                  <div id="talents-item1-description" class="pressable">
+                    <div id="talents-item1-description-rotating" class="rotating"><b>></b></div>
+                    <div><b>Talent Description</b></div>
+                  </div>
+                  <div id="talents-item1-description-child" class="pressable-child" style="display: none;">
+                    <div>
+                      <p>Summons a "Bake-Kurage" created from water that can heal her allies. Using this skill will apply the <b>Wet</b> status to Sangonomiya Kokomi.</p>
+                    </div>
+                    <div>
+                      <p><b>Bake-Kurage</b></p>
+                      <p>Deals <b>Hydro DMG</b> to surrounding opponents and heal nearby active characters at fixed intervals. This healing is based on Kokomi's Max HP.</p>
+                    </div>
+                  </div>
+                </div>
+                <p>A continuous 12s source of healing and AoE Hydro application, it is the constant pillar of her kit and used in every team to great effect. It has three significant value propositions:</p>
+                <ul>
+                  <li>Area of Effect</li>
+                  <li>Sustained</li>
+                  <li>Off-field</li>
+                </ul>
+                <p>Bake-Kurage has no ICD on its Elemental application and will therefore be applying Hydro onto enemies every 2 seconds. Only one Bake-Kurage can exist on the field at a time. Including the initial hit, it will attack for a total of 7 times over the course of 12s. Each following pulse has a 67% chance to generate one Hydro elemental particle (requires hitting enemies), meaning on average 4 Hydro particles are generated over its base duration (the final tick cannot generate a particle).</p>
+                <p>Casting her Elemental Burst in conjunction with her A1 Talent Passive will refresh the Skill's duration. Despite it normally being locked into a stationary position for 20s (refreshing via Burst does not allow repositioning), using a weapon like Sacrificial Fragments can allow readjustments. This tech is most significantly used in Nilou Bloom teams, which lack grouping sources yet rely on Bake-Kurage heavily. </p>
+                <p>On cast, it will also apply the Wet status onto Kokomi. This can cleanse Elemental debuffs, although it can also be a disadvantage by making her vulnerable to Freeze.</p>
+                <p><b>Additional Tech Info:</b> This Skill also snapshots buffs on cast. Consequently, while it does not normally snapshot the HP scaling from her Burst, it is possible to snapshot it by recasting her Skill as Burst mode is ending, and quickly swapping off before the first tick of the new Skill. Using a simple application of this, it is possible to maintain 100% uptime on bonuses just by timing your rotations. Still, this Tech can be difficult and is generally not worth using in practice.</p>
+                <div class="subtitle"><p><em><b>Learn more:</b> <a href="https://library.keqingmains.com/evidence/characters/hydro/sangonomiya-kokomi#snapshot-burst-dmg-bonus-onto-bake-kurage-by-switching" target="_blank">Kokomi | KQM TCL</a></em></p></div>
+              </div>
+            
+            </div>
+
+            <!-- 2nd item -->
+            <div class="table-item talents-item" id="talents-item2">
+              <div class="item-header">
+                <img src="images/talents/elemental-burst.webp">
+                <header><b>Elemental Burst |</b> <em>Nereid's Ascension</em></header>
+              </div>
+              <div class="item-body">
+                <div class="item-description">
+                  <div id="talents-item2-description" class="pressable">
+                    <div id="talents-item2-description-rotating" class="rotating"><b>></b></div>
+                    <div><b>Talent Description</b></div>
+                  </div>
+                  <div id="talents-item2-description-child" class="pressable-child" style="display: none;">
+                    <div>
+                      <p>Summons the might of Watatsumi, dealing <b>Hydro DMG</b> to surrounding opponents, before robing Kokomi in a Ceremonial Garment made from the flowing waters of Sangonomiya.</p>
+                    </div>
+                    <div>
+                      <p><b>Ceremonial Garment</b></p>
+                      <ul>
+                        <li>Sangonomiya Kokomi's Normal Attack, Charged Attack and Bake-Kurage DMG are increased based on her <b>Max HP.</b></li>
+                        <li>When her Normal and Charged Attacks hit opponents, Kokomi will restore HP for all nearby party members, and the amount restored is based on her <b>Max HP</b>.</li>
+                        <li>Increases Sangonomiya Kokomi's <b>resistance to interruption</b> and allows her to walk on the <b>water</b>'s surface.</li>
+                      </ul>
+                      <p>These effects will be cleared once Sangonomiya Kokomi leaves the field.</p>
+                    </div>
+                  </div>
+                </div>
+                <p>Requiring 70 Energy, casting this will activate Kokomi's Ceremonial Garment, adding considerable <b>HP scaling</b> to each of her abilities for a 10s duration. She will lose this state upon switching out. Although unused in popular off-field focused roles (such as Freeze), her Burst is a crucial component in all her other teams. Alongside the refreshed and buffed Bake-Kurage, players will typically spam Normal Attacks, which now heal the entire party with each successful hit. Therefore, during this period, in addition to dealing increased damage with increased resistance to interruption, <b>the party is effectively immortal.</b></p>
+                <p>She will also have increased resistance to interruption during this period, although it is not Infinite Poise/Hyper Armor. Therefore, reinforcements such as Xingqius Rain Swords will result in noticeable improvements in tanking heavy hits.</p>
+                <p>Moreover, her A4 Talent further increases the HP scaling of her Basic Attacks by 15% of her Healing Bonus while under the effects of her Elemental Burst. This actually makes her damage output scale the best with stacking HP and Healing Bonus, due to how significant the damage gained from these is. Therefore, these also make the aforementioned ATK scaling of her base Basic Attacks have low relevance (See the <a>FAQ</a> for further explanations). For example, at Talent Level 9 the Burst mode's enhanced Basic Attacks and Bake-Kurage can account for around 58% of her total damage in a Mono Hydro team (See <a>Talent Leveling Priority</a> for more info). This makes <b>resource investment in her Elemental Burst Talent the most valuable</b> by far for her on-field playstyles.</p>
+                <p>All of her Constellations enhance her output whilst in her Burst state, although her Constellation 1 uses a separate, fixed scaling (30% of Max HP).</p>
+                <p>She is also able to walk/run on any water’s surface during this state, which has niche applications in overworld traversal.</p>
+              </div>
+            </div>
+
+            <!-- 3rd item -->
+            <div class="table-item talents-item" id="talents-item3">
+              <div class="item-header">
+                <img src="images/talents/ascension-1-passive.webp">
+                <header><b>Ascension 1 Passive |</b> <em>Tamanooya's Cascet</em></header>
+              </div>
+              <div class="item-body">
+                <div class="item-description">
+                  <div id="talents-item3-description" class="pressable">
+                    <div id="talents-item3-description-rotating" class="rotating"><b>></b></div>
+                    <div><b>Talent Description</b></div>
+                  </div>
+                  <div id="talents-item3-description-child" class="pressable-child" style="display: none;">
+                    <div>
+                      <p>If Sangonomiya Kokomi's own Bake-Kurage are on the field when she uses <b>Nereid's Ascension</b>, the Bake-Kurage's duration will be refreshed.</p>
+                    </div>
+                  </div>
+                </div>
+                <p>If Sangonomiya Kokomi's own Bake-Kurage are on the field when she uses Nereid's Ascension, the Bake-Kurage's duration will be refreshed. <b>This will not reposition it</b>.</p>
+                <p>Due to Bake-Kurage normally having an 8s downtime, this Passive allows her to maintain 100% uptime on her Elemental Skill. Higher uptime means increased particle generation, Hydro application, healing and buff uptime (if using Tenacity of the Millelith).</p>
+                <p>In fact, some niche teams may just alternate between casting her Skill and Burst every 10s and immediately switch her out in order to maintain this constant Bake-Kurage. However, this is very rarely optimal, and in her most common Freeze teams, Kokomi actually hardly even uses her Burst or this Passive in favour of just using her Skill roughly every 20s.</p>
+                <p><b>Important Note: Refreshing Bake-Kurage requires it to be on the field when the Burst animation ends, so please cast your Elemental Burst at least a second before the Skill expires</b>. This can be annoying as it necessitates either keeping mental timing or doing precise rotations, otherwise the window for refreshing may be missed, wasting her Burst too.</p>
+              </div>
+            </div>
+
+            <!-- 4th item -->
+            <div class="table-item talents-item" id="talents-item4">
+              <div class="item-header">
+                <img src="images/talents/ascension-4-passive.webp">
+                <header><b>Ascension 4 Passive |</b> <em>Song of Pearls</em></header>
+              </div>
+              <div class="item-body">
+                <div class="item-description">
+                  <div id="talents-item4-description" class="pressable">
+                    <div id="talents-item4-description-rotating" class="rotating"><b>></b></div>
+                    <div><b>Talent Description</b></div>
+                  </div>
+                  <div id="talents-item4-description-child" class="pressable-child" style="display: none;">
+                    <div>
+                      <p>While donning the Ceremonial Garment created by Nereid's Ascension, the Normal and Charged Attack DMG Bonus Sangonomiya Kokomi gains based on her Max HP will receive a further increase based on 15% of her <b>Healing Bonus</b>.</p>
+                    </div>
+                  </div>
+                </div>
+                <p>Whilst in her Burst mode <b>“Ceremonial Garment”</b>, the DMG Bonus Kokomi's Basic Attacks gain based on her Max HP will receive a further increase from 15% of her Healing Bonus. This allows her to <b>benefit both offensively and defensively from Healing Bonus</b> stats.</p>
+                <p>For context, a total Healing Bonus of 75.9% (easily achieved with a Healing Bonus% Circlet, Ocean-Hued Clam 2pc set bonus, and 25% via her Flawless Strategy Passive) provides an additional 11.38% HP multiplier to her Burst mode basic attacks. This more than doubles the base Burst mode HP scaling even at Talent Level 10. Healing Bonus can be boosted even higher than this standard through equipping her signature weapon, Everlasting Moonglow.</p>
+              </div>
+            
+            </div>
+
+            <!-- 5th item -->
+            <div class="table-item talents-item" id="talents-item5">
+              <div class="item-header">
+                <img src="images/talents/extra-passive.webp">
+                <header><b>Passive |</b> <em>Flawless Strategy</em></header>
+              </div>
+                <div class="item-body">
+                  <div class="item-description">
+                    <div id="talents-item5-description" class="pressable">
+                      <div id="talents-item5-description-rotating" class="rotating"><b>></b></div>
+                      <div><b>Talent Description</b></div>
+                    </div>
+                    <div id="talents-item5-description-child" class="pressable-child" style="display: none;">
+                      <div>
+                        <p>Sangonomiya Kokomi has a 25% <b>Healing Bonus</b>, but a 100% decrease in <b>CRIT Rate</b>.</p>
+                      </div>
+                    </div>
+                  </div>
+                <p>Certainly the most obfuscated part of her kit in terms of implications. Simply put, this combines with the rest of her kit to trade CRIT scaling for Healing Bonus scaling. That's all it really has to mean for all intents and purposes. However, nuanced implications can be assessed:</p>
+                <p>The downside of this tradeoff is that CRIT stats are effectively useless. Less important for weapon choice, since that can be easily navigated, yet this still has a huge impact on her Artifacts. Typically, players yearn for many CRIT substat rolls on their pieces; however, on Kokomi, they are dead rolls. Combined with Healing Bonus only being available as a main stat via Circlet, and unavailable through substats, these elements <b>limit her growth via artifact investment</b>. It's also well known that typically CRIT substats provide the highest damage increases in most characters' situations, so this further accentuates the loss in growth potential.</p>
+                <p>The upside is that ultimately this tradeoff has borderline <b>no significance to limiting her actual roles</b  >. Just because CRIT multipliers are lost does not mean she cannot be the highest damage dealer in significant teams. It’s more akin to a <b>twist or gimmick</b> to her builds more than anything. It’s smarter to consider it nothing more than a twist too.</p>
+                <p>Another obvious upside is that this Passive also enables her to lean more heavily into the paladin archetype. Her damage dealing builds (or any of her builds) will never shut her off from the healing role, and (aside from Bloom teams valuing EM) target investment goals are streamlined into hunting basically just HP, ER, and Healing Bonus stats to boost her entire kit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="text" id="combos">
+            <h2>Combos</h2>
+            <p>In her Burst mode “<b>Ceremonial Garment</b>”, Kokomi is relatively easy to pilot and you can largely do almost anything as long as you keep using Normal Attacks. Complicating Combos rarely benefits a team's performance dramatically, and actually poor execution can be a net negative. Such consequences include:</p>
+            <ul>
+              <li>running out of Stamina</li>
+              <li>poor positioning</li>
+              <li>losing procs from off-field damage dealers</li>
+            </ul>
+
+            <p>It is recommended to play on-field Kokomi in whatever manner feels comfortable for your account and your device while keeping in mind some basic reminders:</p>
+            <!-- <ul id="combo-guidelines">
+              <li>Dashing and regular repositioning has very practical use in combat. It’s helpful to not rely too much on her range, especially since her Normal Attacks make her move slightly backwards. There is also the range of her Skill and other team abilities to consider. Moreover, while Kokomi can tank enemy attacks with her healing, these movements can also aid with dodging heavy attacks that would otherwise stagger her.</li>
+              <li>Her Charged Attacks are very Stamina-intensive, and consecutive use can limit Stamina reserve for dashing.</li>
+              <li>Still, as mentioned earlier, Charged Attacks are an effective tool in applying more Hydro for both shield breaking and team reactions. They also spawn directly below the target, providing vertical range against enemies on hilichurl towers and allowing her to hit annoying targets behind fences/obstacles.</li>
+              <li>The HP and Healing Bonus scaling from Nereid's Ascension and Song of Pearls flatten the differences in the damage scaling on her Normal and Charged Attack hits. Furthermore, a lot of her output can come from the Ocean-Hued Clam set effect, which generally hits its DMG cap every 3.5s. The higher Talent multipliers of her 3rd Normal Attack hit and Charged Attack are therefore less important than they initially look.</li>
+              <li>Her Constellation 1 highly incentivizes finishing her combo with the third Normal Attack. This results in more damage AND more Hydro application.</li>
+            </ul> -->
+            <div id="combo-guidelines" class="text table">
+              <div class="table-item">Dashing and regular repositioning has very practical use in combat. It’s helpful to not rely too much on her range, especially since her Normal Attacks make her move slightly backwards. There is also the range of her Skill and other team abilities to consider. Moreover, while Kokomi can tank enemy attacks with her healing, these movements can also aid with dodging heavy attacks that would otherwise stagger her.</div>
+              <div class="table-item">Her Charged Attacks are very Stamina-intensive, and consecutive use can limit Stamina reserve for dashing.</div>
+              <div class="table-item">Still, as mentioned earlier, Charged Attacks are an effective tool in applying more Hydro for both shield breaking and team reactions. They also spawn directly below the target, providing vertical range against enemies on hilichurl towers and allowing her to hit annoying targets behind fences/obstacles.</div>
+              <div class="table-item">The HP and Healing Bonus scaling from Nereid's Ascension and Song of Pearls flatten the differences in the damage scaling on her Normal and Charged Attack hits. Furthermore, a lot of her output can come from the Ocean-Hued Clam set effect, which generally hits its DMG cap every 3.5s. The higher Talent multipliers of her 3rd Normal Attack hit and Charged Attack are therefore less important than they initially look.</div>
+              <div class="table-item">Her Constellation 1 highly incentivizes finishing her combo with the third Normal Attack. This results in more damage AND more Hydro application.</div>
+            </div>
+
+            <div id="specific-combos">
+              <div class="item-description">
+                <div id="specific-combo-description" class="pressable">
+                  <div id="specific-combo-description-rotating" class="rotating"><b>></b></div>
+                  <div><b>Specific Combos</b></div>
+                </div>
+                <div id="specific-combo-description-child" class="pressable-child" style="display: none;">
+                  <div>
+                    <p>N# = Corresponding number of consecutive Normal Attacks</p>
+                    <p>D = Dash cancel</p>
+                    <p>W = Walk cancel</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <p><b>Using N3 or N3D is most recommended.</b></p>
+                <p>N3 - This is easy and just uses her full Normal Attack string, whilst saving any complications for practical adjustments like prior mentioned dash repositioning or dodging. This also allows her to remain in her Normal Attack animations longer, potentially allowing her to trigger more Sword Rain and Exquisite Throws from Xingqiu and Yelan. Full Burst mode target: 5N3</p>
+                <p>N3D - The N3 animation can be dash canceled for minimal improvement right after the projectile forms, but take care to learn the timing as dashing before it forms results in no damage being dealt at all. For an example comparison, whilst full left-click spam could get 5N3, efficient dash canceling can net an extra N2 before her Burst mode state expires.
+                  Full Burst mode target: 5N3D N2 (6 N3D is theoretically possible)
+                </p>
+                <!-- <iframe width="480" height="270" src="https://www.youtube.com/embed/2YvXp8d4za4?autoplay=1&mute=1&loop=1" ></iframe> -->
+                <p><b>N2W (Not recommended), N2D (Partially recommended)</b></p>
+                <p>How to perform N2W: Trigger two Normal Attacks, tap the walk button with careful timing, trigger two Normal Attacks again, repeat.
+                  Example Burst mode target: 9N2W
+                </p>
+                <p>N2 combos take advantage of her small damage differences between her hits, so getting more overall hits in can result in higher output. For example, squeezing 9N2W’s can result in a 9-10% DPS increase for Kokomi in Mono Hydro over N3 spamming, and in Electro-Charged teams it may trigger more Beidou Burst/Fischl C6 procs.</p>
+                <p>However, that doesn’t make it recommended. N2W is impractical to consistently perform for most people, and even lacks repositioning without N2D. The resulting <b>poor execution can result in net losses</b>. Further losses can occur when playing alongside off-field damage dealers like Yelan. Losing out on their hits will be a dramatic loss (Yelan’s Exquisite Throws trigger whilst in Normal Attack animations, and Kokomi’s N3 naturally has more time in the animation).</p>
+                <p>Even in the above-mentioned Mono Hydro example as a best case scenario, with the team giving her high personal damage output (⅓~ of the team's output depending on investments), she is still only one of several damage dealers, and other comps like Electro-Charged can have her dealing a lower damage share than that. 
+                  Therefore, the practical damage gain is always <b>questionable in terms of team DPS</b> for how much focus you need to execute them in otherwise relatively easy teams. Still, if stamina is available, <b>throwing in a few N2D’s to speed up a fight is helpful</b> and can be recommended. Just don’t attempt to spam it too much.</p>
+                <p>Lastly, if Constellation 1 is acquired, utilising the extra fish attack for increased damage from full N3 combos is advised regardless.</p>
+              </div>
+            </div>
+            
+
+          </div>
+        </div>
 
       </section>
       
 
     </main>
+    <nav id="navbar">
+      <header>Table of Contents</header>
+      <p class="table-of-contents-main"><a href="#introduction">Introduction</a></p>
+      <p class="table-of-contents-main"><a href="#talents-breakdown">Talents</a></p>
+      <p class="table-of-contents-sub"><a href="#combos">Combos</a></p>
+      <p class="table-of-contents-sub"><a href="#specific-combos">Specific combos</a></p>
+      <p class="table-of-contents-sub"><a href="#talents-priority">Talent Levelling Priority</a></p>
+      <p class="table-of-contents-main"><a href="constellations-breakdown">Constellations</a></p>
+    </nav>
   </body>
 </html>

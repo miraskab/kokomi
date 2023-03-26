@@ -5,23 +5,40 @@ html, body {
     font-family: 'Montserrat', sans-serif, verdana;
     width: 100%;
     min-width: 580px;
-    --text-color: rgb(249, 237, 252);
+    --text-color: rgb(234, 230, 233);
     --header-color: rgb(117, 130, 234);
     --main-color: rgb(103, 150, 243);
+    --background-color: rgba(12, 12, 12, 0.92);
+    --grid-background-color: rgba(30, 30, 30, 0.8);
+    /* --background-color: rgba(39, 36, 58, 0.97);
+    --grid-background-color: rgba(33, 32, 44, 0.8); */
+
 }
 div {
     padding: 0;
     margin: 0;
 }
+a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 1000;
+}
+b {
+    color: rgb(236, 237, 253);
+}
+ul {
+    /* padding-left: 15px; */
+}
+
 .content {
     width: 670px;
     min-width: 450px;
-    background-color: rgba(12, 12, 12, 0.9);
+    background-color: var(--background-color);
     margin: 0;
     padding: 0 35px;
 }
 
-#main-introduction {
+#introduction-talents {
     background-image: url(images/5.png);
     background-size: cover;
     background-position: center bottom;
@@ -43,20 +60,26 @@ div {
     padding: 0;
     margin: 0 10px;
 }
-h1 {
+h1, h2 {
     margin: 0 auto;
     text-align: center;
     margin: 20px 0;
+    color: white;
+    border-radius: 15px;
+}
+h1 {
     background-color: var(--header-color);
     padding: 20px;
-    color: white;
-    border-radius: 15px;;
+    font-size: 30px;
+    margin-top: 60px;
 }
-
-
-a {
-    color: #7582EA;
-    text-decoration: none;
+h2 {
+    background-color: var(--main-color);
+    padding: 10px;
+}
+iframe {
+    margin: 0 auto;
+    display: block;
 }
 
 #img-div {
@@ -88,9 +111,21 @@ a {
     display: flex;
     align-items: center;
 }
-.table {
+.table-title {
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Montserrat';
+    font-weight: 1000;
+    background-color: var(--main-color);
+    color: white;
+}
+
+#pros-cons {
     display: grid;
     grid-template-areas: 
+        'title title'
         'pros .'
         'pros .'
         'pros .'
@@ -101,19 +136,179 @@ a {
         'pros .'
         'cons .'
         'cons .';
-    border: 2px var(--main-color) solid;
+    border: 1px var(--main-color) solid;
+    background-color: var(--grid-background-color);
 }
-.table > div {
+#pros-cons div {
+    padding: 15px 20px;
+    border: 1px solid var(--main-color);
+}
+
+#talents .table-name {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    text-align: center;
+    padding: 5px 10px;
+    user-select: none;
+    border-top: 1px solid var(--text-color);
+    border-left: 1px solid var(--text-color);
+    border-right: 1px solid var(--text-color);
+    font-size: 15px;
+}
+.hover-brighten:hover {
+    filter: brightness(150%);
+}
+.table-item {
+    background-color: var(--grid-background-color);
+    padding: 10px 10px;
+}
+#talents .table-item {
+    grid-area: talents-item;
+    border: 1px solid var(--text-color);
+}
+
+#talents {
+    display: grid;
+    grid-template-areas: 
+        '. . . . . .'
+        'talents-item talents-item talents-item talents-item talents-item talents-item';
+    column-gap: 4px;
+    /* border: 1px var(--main-color) solid; */
+    /* border-bottom: 1px solid var(--text-color); */
+}
+#combo-guidelines .table-item{
+    border: 1px solid var(--main-color);
+}
+
+.item-header {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 10px 0 10px;
+    margin-bottom: 15px;
+    
+}
+.item-body {
+    padding: 2px 16px;
+}
+.subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 13px;
+}
+.subtitle p {
+    padding: 0;
+    margin: 0;
+}
+.table div {
     text-align: left;
     vertical-align: middle  ;
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 1px solid var(--main-color);
-
-    padding: 20px;
 }
+
+
 @media only screen and (max-width: 600px) {
     .content {
       width: 350px;
       min-width: none;
     }
   }
+
+.item-description {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.pressable {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    background-color: var(--main-color);
+    padding: 3px 20px;
+    user-select: none;
+}
+.pressable:hover {
+    cursor: pointer;
+}
+.pressable-child {
+    display: flex;
+    border: 1px solid var(--main-color);
+    padding: 0 15px;
+    font-size: 14px;
+}
+.pressable-child div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.pressable-child div p{
+    margin: 0;
+}
+.rotating {
+    animation-name: rotate-counter-clockwise-90;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+#combo-guidelines {
+    margin: 15px;
+}
+#combo-guidelines li {
+    margin-bottom: 12px;
+}
+
+.appear {
+    animation-name: appear;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+.disappear {
+    animation-name: disappear;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+@keyframes appear {
+    from {opacity: 0; max-height: 0px;}
+    to {opacity: 1; max-height: 400px;}
+}
+@keyframes disappear {
+    from {opacity: 1; max-height: 400px;}
+    to {opacity: 0; max-height: 0px; display: none;}
+}
+
+@keyframes rotate-clockwise-90 {
+    from {rotate: 0deg;}
+    to {rotate: 90deg;}
+}
+@keyframes rotate-counter-clockwise-90 {
+    from {rotate: 90deg;}
+    to {rotate: 0deg;}
+}
+
+#navbar {
+    position: fixed;
+    top: 60px;
+    left: 40px;
+    background-color: var(--background-color);
+    width: 250px;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid var(--main-color);
+}
+#navbar header {
+    font-size: 21px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--main-color)
+}
+#navbar a {
+    color: white;
+}
+.table-of-contents-main {
+    margin-bottom: 0;
+    margin-top: 14px
+}
+.table-of-contents-sub {
+    margin: 7px 0px 0px 15px;
+    font-size: 15px;
+}
