@@ -6,17 +6,27 @@ const gridBackgroundColor = getComputedStyle(document.getElementsByTagName("html
 
 window.onload = function() {
     
-    const talents = document.getElementsByClassName("interactive");
+    // const talents = document.getElementsByClassName("interactive");
+    const talents = document.getElementsByClassName("talents-name");
     handDisplayCorrectItem(talents);
+    const constellations = document.getElementsByClassName("constellations-name");
+    handDisplayCorrectItem(constellations);
+    const artifacts = document.getElementsByClassName("artifacts-name");
+    handDisplayCorrectItem(artifacts);
+    const weapons = document.getElementsByClassName("weapons-name");
+    handDisplayCorrectItem(weapons);
 
+
+    
     // let btn = document.getElementById("button");
     // let div = document.getElementById("mydiv");
     let pressable = document.getElementsByClassName("pressable");
     makePressable(pressable);
-    let h2divs = document.getElementsByTagName("h2");
-    for(let i = 0; i < h2divs.length; i++){
-        h2divs[i].click();
-    }
+
+    // let h2divs = document.getElementsByTagName("h2");
+    // for(let i = 0; i < h2divs.length; i++){
+    //     h2divs[i].click();
+    // }
 }
 
 function displayCorrectItem() {
