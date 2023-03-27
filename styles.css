@@ -31,9 +31,6 @@ b {
 .text-colored-main {
     color: var(--text-color-blue);
 }
-ul {
-    /* padding-left: 15px; */
-}
 
 .content {
     width: 670px;
@@ -45,11 +42,12 @@ ul {
 
 #introduction-talents {
     background-image: url(images/5.png);
-
 }
 #constellations-artifacts-talents {
     background-image: url(images/4.png);
-    
+}
+#teammates {
+    background-image: url(images/5.png);
 }
 .main-section {
     margin: 0;
@@ -119,6 +117,7 @@ iframe {
 #pros, #cons {
     display: flex;
     align-items: center;
+
 }
 .table-title {
     grid-area: title;
@@ -131,10 +130,9 @@ iframe {
     color: white;
 }
 
-#pros-cons {
+#pros-cons-table {
     display: grid;
     grid-template-areas: 
-        'title title'
         'pros .'
         'pros .'
         'pros .'
@@ -145,12 +143,18 @@ iframe {
         'pros .'
         'cons .'
         'cons .';
-    border: 1px var(--main-color) solid;
     background-color: var(--grid-background-color);
 }
-#pros-cons div {
+#pros-cons-description-child {
+    padding: 0;
+}
+#pros-cons-table {
+    margin: 0;
+    padding: 0;
+}
+#pros-cons-table div {
     padding: 15px 20px;
-    border: 1px solid var(--main-color);
+    border: 1px solid var(--main-color)
 }
 
 #talents .table-name {
@@ -355,11 +359,91 @@ iframe {
         '. . . . . .'
         'weapons-item weapons-item weapons-item weapons-item weapons-item weapons-item';
 }
-#weapons .weapons-name {
-}
 #weapons img {
     max-width: 60px;
     object-fit: fill;
+}
+.elements-item {
+    grid-area: elements-item;
+}
+#elements img {
+    max-width: 45px;
+}
+#elements {
+    --main-color: rgb(70, 70, 70);
+    display: grid;
+    /* column-gap: 4px; */
+    grid-template-areas: 
+        '. . . . .'
+        'elements-item elements-item elements-item elements-item elements-item';
+}
+.character-sheet {
+    font-size: 15px;
+    line-height: 1.4;
+}
+.character-sheet p {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+/* replace #hydro with class */
+#elements .item-body {
+    padding: 0;
+}
+#elements .item-body .item-header {
+    justify-content: space-between;
+    margin-right: 8%;
+}
+#elements > .table-item {
+    padding: 0;
+}
+#elements > .table-item .interactive {
+    border-radius: 0;
+    padding: 8px;
+}
+#elements > .table-item .table {
+    margin: 0;
+}
+#elements .item-body img {
+    max-width: 160px;
+}
+#elements .item-body ul {
+    padding-left: 25px;
+}
+.hydro-item, .anemo-item, .cryo-item, .electro-item, .dendro-item {
+    grid-area: table-item;
+}
+#hydro, #anemo {
+    display: grid;
+    grid-template-areas: 
+        '. . .'
+        'table-item table-item table-item';
+}
+#hydro {
+    --main-color: rgb(103, 150, 243);
+}
+#anemo {
+    --main-color: rgb(66, 194, 185);
+}
+#cryo {
+    --main-color: rgb(124, 194, 217);
+}
+#electro {
+    --main-color: rgb(166, 123, 217);
+}
+#dendro {
+    --main-color: rgb(41, 173, 63);
+}
+#cryo, #dendro {
+    display: grid;
+    grid-template-areas: 
+        '. . . .'
+        'table-item table-item table-item table-item';
+}
+#electro {
+    display: grid;
+    grid-template-areas: 
+        '. . . . .'
+        'table-item table-item table-item table-item table-item';
 }
 .appear {
     animation-name: appear;

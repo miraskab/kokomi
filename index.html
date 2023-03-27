@@ -32,20 +32,28 @@
           </div>
           <br>
           <!-- <h2>Pros & Cons</h2> -->
-          <div class="text table" id="pros-cons">
-            <div class="table-title">Pros & Cons</div>
-            <div id="pros">Pros</div>
-            <div class="pros-item">Wide skill set — both in role variety and role compression.</div>
-            <div class="pros-item">In particular, the paladin archetype (healing and dealing damage) is a rare and sought after playstyle for many players to get the job done with comfort.</div>
-            <div class="pros-item">Consistent Hydro application in a wide AoE is another key and sought after role.</div>
-            <div class="pros-item">Elemental Skill being cast right in front of the player model is quite synergistic with other character abilities and allows very controlled setup sequences.</div>
-            <div class="pros-item">Has synergy with an incredible number of teammates. Accounts are almost guaranteed to have multiple teams available.</div>
-            <div class="pros-item">Incredibly fast animations allow for fast setups and more efficiency.</div>
-            <div class="pros-item">Many weapons at her disposal, including several F2P options.</div>
-            <div class="pros-item">Artifact farming can be streamlined due to not needing CRIT; fewer stats to seek out.</div>
-            <div id="cons">Cons</div>
-            <div class="cons-item">Teams generally utilise a few of her roles. Investments in certain areas can be useful or useless depending on the team. This includes talents, weapons, artifacts and constellations.</div>
-            <div class="cons-item">Despite artifact farming being streamlined, CRIT stats have no value, meaning a reduced amount of useful rolls. This can also limit her damage ceiling.</div>
+          
+          <div class="item-large item-description text" id="pros-cons">
+            <h2 id="pros-cons-description" class="pressable">
+              <div id="pros-cons-description-rotating" class="rotating">></div>
+              <div>Pros & Cons</div>
+            </h2>
+            <div id="pros-cons-description-child" class="pressable-child" style="display: none;">
+              <div class="text table" id="pros-cons-table">
+                <div id="pros">Pros</div>
+                <div class="pros-item">Wide skill set — both in role variety and role compression.</div>
+                <div class="pros-item">In particular, the paladin archetype (healing and dealing damage) is a rare and sought after playstyle for many players to get the job done with comfort.</div>
+                <div class="pros-item">Consistent Hydro application in a wide AoE is another key and sought after role.</div>
+                <div class="pros-item">Elemental Skill being cast right in front of the player model is quite synergistic with other character abilities and allows very controlled setup sequences.</div>
+                <div class="pros-item">Has synergy with an incredible number of teammates. Accounts are almost guaranteed to have multiple teams available.</div>
+                <div class="pros-item">Incredibly fast animations allow for fast setups and more efficiency.</div>
+                <div class="pros-item">Many weapons at her disposal, including several F2P options.</div>
+                <div class="pros-item">Artifact farming can be streamlined due to not needing CRIT; fewer stats to seek out.</div>
+                <div id="cons">Cons</div>
+                <div class="cons-item">Teams generally utilise a few of her roles. Investments in certain areas can be useful or useless depending on the team. This includes talents, weapons, artifacts and constellations.</div>
+                <div class="cons-item">Despite artifact farming being streamlined, CRIT stats have no value, meaning a reduced amount of useful rolls. This can also limit her damage ceiling.</div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -53,7 +61,7 @@
           <h1>Talents breakdown</h1>
           
           <div class="text table" id="talents">
-            <div class="table-name talents-name interactive" id="talents-name0"><b>Normal Attack</b></div>
+            <div class="table-name talents-name interactive" id="talents-name0" name="first"><b>Normal Attack</b></div>
             <div class="table-name talents-name interactive" id="talents-name1"><b>Elemental Skill</b></div>
             <div class="table-name talents-name interactive" id="talents-name2"><b>Elemental Burst</b></div>
             <div class="table-name talents-name interactive" id="talents-name3"><b>Ascension 1 Passive</b></div>
@@ -349,7 +357,7 @@
           </div>
 
           <div class="text table" id="constellations">
-            <div class="table-name constellations-name interactive" id="constellations-name0"><b>Cons. 1</b></div>
+            <div class="table-name constellations-name interactive" id="constellations-name0" name="first"><b>Cons. 1</b></div>
             <div class="table-name constellations-name interactive" id="constellations-name1"><b>Cons. 2</b></div>
             <div class="table-name constellations-name interactive" id="constellations-name2"><b>Cons. 3</b></div>
             <div class="table-name constellations-name interactive" id="constellations-name3"><b>Cons. 4</b></div>
@@ -383,7 +391,7 @@
 
             <div class="table-item constellations-item" id="constellations-item1">
               <div class="item-header">
-                <img src="images/talents/normal-attack.webp">
+                <img src="images/constellations/con2.webp">
                 <header><b>Constellation 2 |</b> <em>The Clouds Like Waves Rippling</em></header>
               </div>
               <div class="item-body">
@@ -407,7 +415,7 @@
 
             <div class="table-item constellations-item" id="constellations-item2">
               <div class="item-header">
-                <img src="images/talents/normal-attack.webp">
+                <img src="images/constellations/con3.webp">
                 <header><b>Constellation 3 |</b> <em>The Moon, A Ship O'er the Seas</em></header>
               </div>
               <div class="item-body">
@@ -431,7 +439,7 @@
             </div>
             <div class="table-item constellations-item" id="constellations-item3">
               <div class="item-header">
-                <img src="images/talents/normal-attack.webp">
+                <img src="images/constellations/con4.webp">
                 <header><b>Constellation 4 |</b> <em>The Moon Overlooks the Waters</em></header>
               </div>
               <div class="item-body">
@@ -456,7 +464,7 @@
             </div>
             <div class="table-item constellations-item" id="constellations-item4">
               <div class="item-header">
-                <img src="images/talents/normal-attack.webp">
+                <img src="images/constellations/con5.webp">
                 <header><b>Constellation 5 |</b> <em>All Streams Flow to the Sea</em></header>
               </div>
               <div class="item-body">
@@ -480,7 +488,7 @@
             </div>
             <div class="table-item constellations-item" id="constellations-item5">
               <div class="item-header">
-                <img src="images/talents/normal-attack.webp">
+                <img src="images/constellations/con6.webp">
                 <header><b>Constellation 6 |</b> <em>Sango Isshin</em></header>
               </div>
               <div class="item-body">
@@ -506,9 +514,6 @@
             </div>
           </div>
 
-          
-          
-
         </div>
 
         <div class="content" id="artifacts-breakdown">
@@ -520,7 +525,7 @@
           </div>
 
           <div class="text table" id="artifacts">
-            <div class="table-name artifacts-name interactive" id="artifacts-name0"><img src="images/artifacts/ohc.webp"></div>
+            <div class="table-name artifacts-name interactive" id="artifacts-name0" name="first"><img src="images/artifacts/ohc.webp"></div>
             <div class="table-name artifacts-name interactive" id="artifacts-name1"><img src="images/artifacts/totm.webp"></div>
             <div class="table-name artifacts-name interactive" id="artifacts-name2"><img src="images/artifacts/gd.webp"></div>
             <div class="table-name artifacts-name interactive" id="artifacts-name3"><img src="images/artifacts/fopl.webp"></div>
@@ -595,8 +600,8 @@
               Full sheets with more details can be found in the <a>Resources</a> section.</p>
           </div>
           
-          <div class="text table" id="weapons">
-            <div class="table-name weapons-name interactive" id="weapons-name0"><b><img src="images/weapons/moonglow.webp"></b></div>
+          <!-- <div class="text table" id="weapons">
+            <div class="table-name weapons-name interactive" id="weapons-name0" name="first"><b><img src="images/weapons/moonglow.webp"></b></div>
             <div class="table-name weapons-name interactive" id="weapons-name1"><b><img src="images/weapons/amber.webp"></b></div>
             <div class="table-name weapons-name interactive" id="weapons-name2"><b><img src="images/weapons/ttds.webp"></b></div>
             <div class="table-name weapons-name interactive" id="weapons-name3"><b><img src="images/weapons/hakushin.webp"></b></div>
@@ -605,6 +610,7 @@
             
             <div class="table-item weapons-item" id="weapons-item0">
               <div class="item-body">
+                <p><b>Everlasting Moonglow</b></p>
                 <p>Kokomi’s signature weapon, and (aside from Bloom teams) best overall for her personal damage.
                   It also refunds a solid amount of Energy in teams where she has sufficient field time.
                   </p>
@@ -619,6 +625,7 @@
             </div>
             <div class="table-item weapons-item" id="weapons-item1">
               <div class="item-body">
+                <p><b>Prototype Amber</b></p>
                 <p><b>Generalist choice</b> for personal damage, as well as giving a significant amount of personal Energy generation that scales with refines.</p>
                 <p>Lastly, the additional healing utility can be helpful, but since it requires her Burst to be cast, its effect is unlikely to be noticeable in many situations.</p>
                 <p>Never the best option, but always useful to have as a F2P catch-all choice. <b>Highly recommended to craft</b>.</p>
@@ -632,6 +639,7 @@
             </div>
             <div class="table-item weapons-item" id="weapons-item2">
               <div class="item-body">
+                <p><b>Thrilling Tales of Dragon Slayers</b></p>
                 <p>A common supportive option, providing huge buffs for an ATK scaling teammate.
                   Very effective in <b>buffing Cryo teammates</b> in Freeze teams, as well as some Electro teammates in Electro-Charged comps.</p>
                 <p>However, common teammate Yelan does not scale from ATK, and other common teammates like Xingqiu and Yae Miko benefit less due to lack of snapshottable abilities</p>
@@ -645,6 +653,7 @@
             </div>
             <div class="table-item weapons-item" id="weapons-item3">
               <div class="item-body">
+                <p><b>Hakushin Ring</b></p>
                 <p>Another F2P alternative, providing ER and Hydro DMG for Kokomi.
                 The main selling point though is giving Electro DMG to teammates where applicable. This can allow Hakushin to overtake other options in Electro-Charged teams.</p>
                 <p>The differences with TTDS aren’t that significant (and values can shift depending on the exact teammates and investment), but Hakushin Ring can be more rotationally flexible.</p>
@@ -659,6 +668,7 @@
             </div>
             <div class="table-item weapons-item" id="weapons-item4">
               <div class="item-body">
+                <p><b>Sacrificial Fragments</b></p>
                 <p>Premier option for Nilou Bloom teams. Despite providing a huge amount of EM to increase Kokomi’s reaction damage, that is not the winning utility it provides.</p>
                 <p>It allows her to recast and reposition Bake-Kurage, which is extremely helpful when its AoE application creates a huge portion of the team’s Blooms, as well as making up for the team lacking Anemo grouping. It is critical to be positioning Bake-Kurage in the most effective areas of each encounter.</p>
                 <p>It can also ease Energy issues, alleviating reliance on refreshing Bake-Kurage via Burst.</p>
@@ -669,14 +679,658 @@
             </div>
             <div class="table-item weapons-item" id="weapons-item5">
               <div class="item-body">
+                <p><b>A Thousand Floating Dreams</b></p>
                 <p>It is difficult to consider this, since if this catalyst is available, it most certainly was pulled for Nahida's use in the same Bloom team. However, if there happens to be an extra copy available, then it does increase Kokomi's EM more than Sacrificial Fragments, as well as provide an extra team EM buff.</p>
                 <p>It does lack extra Skill uses, which can be detrimental in long fights since Sacrificial Fragments could easily reposition and maintain uptime on Bake-Kurage. However it is technically a strict upgrade in quick fights, or Abyss chambers with no repositioning needed.</p>
               </div>
             </div>
+          </div> -->
+          <div class="text table" id="weapons">
+            <div class="table-name weapons-name interactive" id="weapons-name0" name="first"><b>Everlasting Moonglow</b></div>
+            <div class="table-name weapons-name interactive" id="weapons-name1"><b>Prototype <br>Amber</b></div>
+            <div class="table-name weapons-name interactive" id="weapons-name2"><b>Thrilling <br>Tales</b></div>
+            <div class="table-name weapons-name interactive" id="weapons-name3"><b>Hakushin <br>Ring</b></div>
+            <div class="table-name weapons-name interactive" id="weapons-name4"><b>Sacrificial Fragments</b></div>
+            <div class="table-name weapons-name interactive" id="weapons-name5"><b>Floating Dreams</b></div>
             
-            
+            <div class="table-item weapons-item" id="weapons-item0">
+              <div class="item-header">
+                <img src="images/weapons/moonglow.webp">
+                <header><b>Everlasting Moonglow</b></header>
+              </div>
+              <div class="item-body">
+                
+                <p>Kokomi’s signature weapon, and (aside from Bloom teams) best overall for her personal damage.
+                  It also refunds a solid amount of Energy in teams where she has sufficient field time.
+                  </p>
+                <p><b>Most effective in Mono Hydro</b> and similar teams where her personal damage is of utmost importance. However, it will fall off in favor of supportive weapons like R5 Hakushin Ring in other teams. Besides, even in Mono Hydro it’s not that substantial of an upgrade compared to other characters’ signature offerings.</p>
+                <div class="subtitle">
+                  <p><b>Mono Hydro</b></p>
+                  <p>% Difference vs R5 Prototype Amber - 108%; Avg. Energy generated - 9 Flat Energy;</p>
+                  <p><b>Electro-Charged</b></p>
+                  <p>Weapon Damage Contribution Relative to R5 TTDS: 104.4%;</p>
+                </div>
+              </div>
+            </div>
+            <div class="table-item weapons-item" id="weapons-item1">
+              <div class="item-header">
+                <img src="images/weapons/amber.webp">
+                <header><b>Prototype Amber</b></header>
+              </div>
+              <div class="item-body">
+                <p><b>Generalist choice</b> for personal damage, as well as giving a significant amount of personal Energy generation that scales with refines.</p>
+                <p>Lastly, the additional healing utility can be helpful, but since it requires her Burst to be cast, its effect is unlikely to be noticeable in many situations.</p>
+                <p>Never the best option, but always useful to have as a F2P catch-all choice. <b>Highly recommended to craft</b>.</p>
+                <div class="subtitle">
+                  <p><b>Mono Hydro</b></p>
+                  <p>% Difference vs R5 Prototype Amber: 100%; Energy generated - 18 Flat Energy at R5;</p>
+                  <p><b>Electro-Charged</b></p>
+                  <p>Weapon Damage Contribution Relative to R5 TTDS R1: 95.5% R5: 97.6%</p>
+                </div>
+              </div>
+            </div>
+            <div class="table-item weapons-item" id="weapons-item2">
+              <div class="item-header">
+                <img src="images/weapons/ttds.webp">
+                <header><b>Thrilling Tales of Dragonslayers</b></header>
+              </div>
+              <div class="item-body">
+                
+                <p>A common supportive option, providing huge buffs for an ATK scaling teammate.
+                  Very effective in <b>buffing Cryo teammates</b> in Freeze teams, as well as some Electro teammates in Electro-Charged comps.</p>
+                <p>However, common teammate Yelan does not scale from ATK, and other common teammates like Xingqiu and Yae Miko benefit less due to lack of snapshottable abilities</p>
+                <p>Its HP% substat does help with Kokomi’s damage output, but not enough to mitigate its lackluster performance, making the weapon the weakest option for personal damage. It also provides no utility for Energy generation and can restrict rotations.</p>
+
+                <div class="subtitle">
+                  <p><b>Electro-Charged</b></p>
+                  <p>Weapon Damage Contribution Relative to R5 TTDS: 100%;</p>
+                </div>
+              </div>
+            </div>
+            <div class="table-item weapons-item" id="weapons-item3">
+              <div class="item-header">
+                <img src="images/weapons/hakushin.webp">
+                <header><b>Hakushin Ring</b></header>
+              </div>
+              <div class="item-body">
+                <p>Another F2P alternative, providing ER and Hydro DMG for Kokomi.
+                The main selling point though is giving Electro DMG to teammates where applicable. This can allow Hakushin to overtake other options in Electro-Charged teams.</p>
+                <p>The differences with TTDS aren’t that significant (and values can shift depending on the exact teammates and investment), but Hakushin Ring can be more rotationally flexible.</p>
+                <p>Very balanced and comfortable to use although caution must be taken with teammates like Fischl and Beidou. Avoid using Stormbreaker and Oz before the Hakushin buffs have triggered, since those abilities snapshot.</p>
+                
+                <div class="subtitle">
+                  <p><b>Electro-Charged</b></p>
+                  <p>Weapon Damage Contribution Relative to R5 TTDS: R1: 98.7%; R5: 109.8%;</p>
+                  <p>R5, If Yae Miko has R1 Kagura’s Verity: 104.2%</p>
+                </div>
+              </div>
+            </div>
+            <div class="table-item weapons-item" id="weapons-item4">
+              <div class="item-header">
+                <img src="images/weapons/sacfrags.webp">
+                <header><b>Sacrificial Fragments</b></header>
+              </div>
+              <div class="item-body">
+                <p>Premier option for Nilou Bloom teams. Despite providing a huge amount of EM to increase Kokomi’s reaction damage, that is not the winning utility it provides.</p>
+                <p>It allows her to recast and reposition Bake-Kurage, which is extremely helpful when its AoE application creates a huge portion of the team’s Blooms, as well as making up for the team lacking Anemo grouping. It is critical to be positioning Bake-Kurage in the most effective areas of each encounter.</p>
+                <p>It can also ease Energy issues, alleviating reliance on refreshing Bake-Kurage via Burst.</p>
+                <div class="subtitle">
+                  <p><b>Note</b>: In Bloom teams, it is unreasonable to calculate damage differences between weapons due to their nature and <b>infinite variables</b>. To name a few, damage can change depending on the amount of enemies, position of enemies, position of the character and the exact timing each attack input is made. Instead, it's advised to just pay attention to total EM and utility bonuses a weapon may provide.</p>
+                </div>
+              </div>
+            </div>
+            <div class="table-item weapons-item" id="weapons-item5">
+              <div class="item-header">
+                <img src="images/weapons/dreams.webp">
+                <header><b>A Thousand Floating Dreams</b></header>
+              </div>
+              <div class="item-body">
+                <p>It is difficult to consider this, since if this catalyst is available, it most certainly was pulled for Nahida's use in the same Bloom team. However, if there happens to be an extra copy available, then it does increase Kokomi's EM more than Sacrificial Fragments, as well as provide an extra team EM buff.</p>
+                <p>It does lack extra Skill uses, which can be detrimental in long fights since Sacrificial Fragments could easily reposition and maintain uptime on Bake-Kurage. However it is technically a strict upgrade in quick fights, or Abyss chambers with no repositioning needed.</p>
+              </div>
+            </div>
           </div>
+          
         </div>
+      </section>
+      <section class="main-section" id="teammates">
+        <div class="content" id="test">
+          <h1>Teammates 101</h1>
+          <div class="text">
+            <p>This section will be a deep dive on many potential characters you could field alongside Kokomi.</p>
+
+          </div>
+          <div class="text table" id="elements">
+            <div class="table-name elements-name interactive" id="elements-name0" name="first"><img src="images/elements/hydro.svg"></div>
+            <div class="table-name elements-name interactive" id="elements-name1"><img src="images/elements/anemo.svg"></div>
+            <div class="table-name elements-name interactive" id="elements-name2"><img src="images/elements/cryo.svg"></div>
+            <div class="table-name elements-name interactive" id="elements-name3"><img src="images/elements/electro.svg"></div>
+            <div class="table-name elements-name interactive" id="elements-name4"><img src="images/elements/dendro.svg"></div>
+              
+            <!-- Hydro -->
+            <div class="table-item elements-item" id="elements-item0">
+              <div class="item-body">
+                <div class="text table" id="hydro">
+                  <div class="table-name hydro-name interactive" id="hydro-name0" name="first"><b>Nilou</b></div>
+                  <div class="table-name hydro-name interactive" id="hydro-name1"><b>Yelan</b></div>
+                  <div class="table-name hydro-name interactive" id="hydro-name2"><b>Xingqiu</b></div>
+                  
+                  <div class="table-item hydro-item" id="hydro-item0">
+                    <div class="item-header">
+                      <img src="images/characters/nilou.webp">
+                      <div class="character-sheet">
+                        <header><b>Synergy: S</b></header>
+                        <p>On/Off-Field DPS <br>Support/Buffer<br>Bloom</p>
+                        <p><b>Example Weapons</b>:<br>Key to Khaj-Nisut<br>Iron Sting<br>Favonius Sword</p>
+                      </div>
+                      <div class="character-sheet">
+                        <p><b>Artifacts</b>:<br>2ToTM + 80 EM set<br>HP/HP/HP</p>
+                        <p><b>Common Teammates</b>:<br>Traveler + Collei<br>Nahida + Collei<br>Nahida + Yelan</p>
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <p>Due to Nilou’s unique Talent <b>Court of Dancing Petals</b>, which enhances standard Dendro Cores into Bountiful Cores, she is effectively purely designed around Bloom teams. She is also limited to just Hydro and Dendro teammates in order to activate this and other talents within her kit. Together, the goal is to generate as much AoE Dendro and Hydro application as possible, maximising Bloom detonations. Kokomi is very effective in achieving this alongside providing additional tools with her role compression.</p>
+                      <ul>
+                        <li>Bountiful Cores deal significant recoil damage. Kokomi’s healing from various sources provides vital role compression. This is critical, as there aren't many defensive units within the Dendro Element yet.</li>
+                        <li>As a Catalyst wielder with on demand Elemental Basic Attacks, Kokomi can flexibly spend time in and out of Burst mode to bring additional Hydro application. As a bonus, Burst mode attacks will also ramp up recovery from recoil damage.</li>
+                        <li>Nilou’s teammate limitations prevent Anemo supports, which are usually instrumental in AoE content due to their grouping. Kokomi wielding Sacrificial Fragments circumnavigates this somewhat. Its passive allows regular repositioning of Bake-Kurage, such adjustments aiding with the optimal coverage of its range for dynamic encounters. As a bonus, it also provides EM for Kokomi’s reaction damage.</li>
+                        <li>The only real anti-synergy with Nilou is that Kokomi is usually incentivised to stack HP and Healing Bonus. However, since Kokomi typically deals important damage in the team by triggering a notable portion of Blooms, EM is key to raising the team’s ceiling. Focusing on EM can reduce her Max HP and overall healing potential, however hybrid builds covering all stats can also be strong and well-rounded.</li>
+                        <li>Even if fully investing in EM (this includes artifact set bonuses), Kokomi’s base healing performance is strong enough that with careful play, surviving will be fine.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="table-item hydro-item" id="hydro-item1">
+                    <div class="item-header">
+                      <img src="images/characters/yelan.webp">
+                      <div class="character-sheet">
+                        <header><b>Synergy: A</b></header>
+                        <p>Off-Field DPS/Buffer <br>Mono Hydro, <br>Electro-Charged</p>
+                        <p><b>Example Weapons</b>:<br>Aqua Simulacra<br>Elegy for the End<br>Slingshot</p>
+                      </div>
+                      <div class="character-sheet">
+                        <p><b>Artifacts</b>:<br>4pc EoSF<br>HP/Hydro/CRIT</p>
+                        <p><b>Common Teammates</b>:<br>Kazuha + Xingqiu<br>Kazuha + Fischl<br>Nahida + Nilou</p>
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <ul>
+                        <li>Just pairing these two together in a team is a buff. Two Hydro teammates will activate Hydro Resonance, increasing party HP by 25%, a straight increase to both characters’ output. Obviously, this also increases their survivability.</li>
+                        <li>Yelan’s A4 Talent will also provide a significant DMG bonus to Kokomi on-field, which she can utilise whilst repeatedly triggering Yelan’s Exquisite Throws for mutual benefit (though it won’t increase OHC’s damage).</li>
+                        <li>As they both create Hydro particles, they can reduce each other's ER requirements notably. The specific highlight of this is that with Yelan, it’s a lot easier to hit breakpoints to where she no longer has to run Energy-oriented weapons. Due to her own off-field DMG strength, trading something like Favonius Warbow for Aqua Simulacra is a huge benefit.</li>
+                        <li>Yelan’s Elemental Skill can minorly group up enemies, setting them up closer for Kokomi and other common teammate’s deployable Skills.</li>
+                        <li>For higher budget players, Yelan’s C4 provides rare HP% buffs which is not only beneficial to Kokomi and herself, but also common teammates they can pair with like Nilou.</li>
+                      </ul>
+                    </div>
+                  </div>
+      
+                  <div class="table-item hydro-item" id="hydro-item2">
+                    <div class="item-header">
+                      <img src="images/characters/xingqiu.webp">
+                      <div class="character-sheet">
+                        <header><b>Synergy: A</b></header>
+                        <p>Off-Field DPS/Debuffer<br>Mono Hydro, <br>Electro-Charged</p>
+                        <p><b>Example Weapons</b>:<br>Primordial Jade Cutter<br>Harbinger of Dawn</p>
+                      </div>
+                      <div class="character-sheet">
+                        <p><b>Artifacts</b>:<br>4pc EoSF<br>HP/Hydro/CRIT</p>
+                        <p><b>Common Teammates</b>:<br>Kazuha + Yelan<br>Kazuha + Fischl<br>Nilou + Nahida</p>
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <p>Due to Nilou’s unique Talent <b>Court of Dancing Petals</b>, which enhances standard Dendro Cores into Bountiful Cores, she is effectively purely designed around Bloom teams. She is also limited to just Hydro and Dendro teammates in order to activate this and other talents within her kit. Together, the goal is to generate as much AoE Dendro and Hydro application as possible, maximising Bloom detonations. Kokomi is very effective in achieving this alongside providing additional tools with her role compression.</p>
+                      <ul>
+                        <li>His C2 reduces enemies Hydro RES, increasing both characters’ output.</li>
+                        <li>His Rain Swords provide increased resistance to interruption. During Kokomi’s Burst mode state, she also increases her interruption resistance and can constantly Normal Attack, allowing her to efficiently trigger his Burst’s Sword Rain hits.</li>
+                        <li>Just as with Yelan, Xingqiu can also reduce Kokomi’s ER requirements and vice versa.</li>
+                        <li>For low budget setups, Kokomi’s party-wide healing, and just strong healing in general allows Xingqiu to constantly be at full HP. Combined with reduced ER requirements, this can allow him freedom to use the 3* Sword Harbinger of Dawn without concern.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Anemo -->
+            <div class="table-item elements-item" id="elements-item1">
+              <div class="item-body">
+                <div class="text table" id="anemo">
+                  <div class="table-name anemo-name interactive" id="anemo-name0" name="first"><b>Kazuha</b></div>
+                  <div class="table-name anemo-name interactive" id="anemo-name1"><b>Sucrose</b></div>
+                  <div class="table-name anemo-name interactive" id="anemo-name2"><b>Venti</b></div>
+                  
+                  <div class="table-item anemo-item" id="anemo-item0">
+                    <div class="item-header">
+                      <img src="images/characters/kazuha.webp">
+                      <div class="character-sheet">
+                        <header><b>Synergy: S</b></header>
+                        <p>Grouping/Off-Field DPS<br>Buffer/Debuffer<br>Mono Hydro, Hyperbloom, <br>Freeze, Electro-Charged</p>
+                        <p><b>Example Weapons</b>:<br>Freedom-sworn<br>Xiphos' Moonlight<br>Favonius Sword</p>
+                      </div>
+                      <div class="character-sheet">
+                        <p><b>Artifacts</b>:<br>4pc Viridescent<br>EM/EM/EM</p>
+                        <p><b>Common Teammates</b>:<br>Ayaka + Shenhe<br>Yelan + Xingqiu<br>Fischl + Yae Miko</p>
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <ul>
+                        <li>Kazuha is the premier Elemental DMG buffer, and combined with RES Shred via 4pc VV, he can boost Kokomi’s damage tremendously. This is exceedingly useful with common teammates like Yelan who do not benefit from common ATK buff sources, or teammates who do not snapshot ATK buffs like Xingqiu or Yae Miko and therefore can often lack buffed damage.</li>
+                        <li>Elemental DMG bonus itself is also more universal than perhaps how Sucrose primarily buffs EM. Teammates, whether focusing on reaction damage or not, will benefit from Elemental DMG bonus, so it is commonly more efficient.</li>
+                        <li>His crowd control is tied to his Elemental Skill, but unlike other options this Skill is very versatile with short cooldowns. This actually makes him the most consistent grouper due to his Skill’s regular uptime throughout fights.</li>
+                        <li>His grouping also pulls enemies towards him, and its circular nature has natural synergy with Kokomi and common teammates, such as being able to pull enemies towards an AoE Freeze zone, or towards Kokomi’s and Fischl’s deployable Elemental Skills, in a controlled manner.</li>
+                        <li>His plunge can Shatter Frozen targets, potentially undoing careful grouping when using low Hydro application. However, with Bake-Kurage’s long and sustained Hydro application this is a non-issue.</li>
+                      </ul>
+                    </div>
+                  </div>
+      
+                  <div class="table-item anemo-item" id="anemo-item1">
+                    <div class="item-header">
+                      <img src="images/characters/sucrose.webp">
+                      <div class="character-sheet">
+                        <header><b>Synergy: A</b></header>
+                        <p>Grouping/Debuffer<br>Buffer<br>Electro-Charged, <br>Hyperbloom</p>
+                        <p><b>Example Weapons</b>:<br>Sacrificial Fragments<br>Hakushin Ring<br>TTDS</p>
+                      </div>
+                      <div class="character-sheet">
+                        <p><b>Artifacts</b>:<br>4pc Viridescent<br>EM/EM/EM</p>
+                        <p><b>Common Teammates</b>:<br>Fischl + Beidou<br>Fischl + Yae Miko</p>
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <ul>
+                        <li>Sucrose has similar buffing utility to Kazuha (4pc VV, Elemental DMG Bonus from her C6), but specialises more in sharing huge amounts of EM to her teams. This can be very effective in raising the floor of the team’s collective reaction damage. It allows teammates without EM investment to still do appreciable reaction damage, particularly in Electro-Charged teams which typically have chaotic reaction ownership.</li>
+                        <li>As a Catalyst user, Sucrose is effective in triggering frequent reactions on field. She also has a separate Elemental application ICD on her Normal Attacks, Charged Attacks, Skill, and Burst, further bolstering this utility.</li>
+                        <li>Although Kokomi is very capable of spending time driving in her Burst mode, pairing her with Sucrose offers more flexibility. Sucrose is available to share the on-field driving role (if not focusing on Sucrose driving entirely) whilst triggering additional reactions and constantly refreshing 4pc VV debuffs.</li>
+                        <li>Sacrificial Fragments can also be used on Sucrose for additional grouping and Energy. This grouping flexibility can be very important for keeping enemies within Kokomi and other teammates’ AoE range.</li>
+                        <li>Kokomi and Sucrose also synergise with each other well in terms of gear. One can focus on damage whilst the other covers utility, or they can both give additional buffs to teammates. These decisions are very flexible and generally will not dramatically shift total output, although one should pay attention to practical differences. For example, Sucrose using Sacrificial Fragments offers more grouping, and TTDS can make for less rotational freedom.</li>
+                      </ul>
+                    </div>
+                  </div>
+      
+                  <div class="table-item anemo-item" id="anemo-item2">
+                    <div class="item-header">
+                      <img src="images/characters/venti.webp">
+                      <div class="character-sheet">
+                        <header><b>Synergy: B</b></header>
+                        <p>Buffer/Debuffer<br>Grouping/Off-Field DPS<br>Freeze, Hyperbloom<br>Electro-Charged, </p>
+                        <p><b>Example Weapons</b>:<br>Elegy for the End<br>The Stringless</p>
+                      </div>
+                      <div class="character-sheet">
+                        <p><b>Artifacts</b>:<br>4pc Viridescent<br>EM/EM/EM<br>ATK/Anemo/CRIT</p>
+                        <p><b>Common Teammates</b>:<br>Ayaka + Shenhe<br>Fischl + Yae Miko</p>
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <ul>
+                        <li>Venti’s powerful Elemental Burst grouping and Elemental application make him an ideal candidate for reaction-heavy teams facing a lot of incoming enemies.</li>
+                        <li>All of Kokomi’s attacks, particularly her Elemental Skill and Basic Attacks, can all reach inside Venti’s Burst. Outside of Freeze, the Energy refund he provides helps a great deal as well, especially in Electro-Charged teams where Kokomi may be the only Hydro character.</li>
+                        <li>Unfortunately, he doesn’t really supply additional DMG buffs like Kazuha or Sucrose, and his effectiveness is limited outside of AoE content, meaning he isn’t ideally suited to many battles Kokomi’s teams may be readying for.</li>
+                        <li>Take caution: Kokomi’s Bake-Kurage gets placed next to her, and Venti’s Burst is aimed a few meters in front of him. This can require careful repositioning.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <!-- Cryo -->
+            <div class="table-item elements-item" id="elements-item2">
+              <div class="item-body">
+                <div class="text table" id="cryo">
+                  <div class="table-name cryo-name interactive" id="cryo-name0" name="first"><b>Ayaka</b></div>
+                  <div class="table-name cryo-name interactive" id="cryo-name1"><b>Ganyu</b></div>
+                  <div class="table-name cryo-name interactive" id="cryo-name2"><b>Shenhe</b></div>
+                  <div class="table-name cryo-name interactive" id="cryo-name3"><b>Rosaria</b></div>
+                  
+                  <div class="table-item cryo-item" id="cryo-item0">
+                    <div class="item-header">
+                      <img src="images/characters/Ayaka.webp">
+                      <div class="character-sheet">
+                        <header><b>Synergy: A+</b></header>
+                        <p>On-Field DPS<br>Freeze</p>
+                        <p><b>Example Weapons</b>:<br>Mistsplitter Reforged<br>Amenoma Kageuchi</p>
+                      </div>
+                      <div class="character-sheet">
+                        <p><b>Artifacts</b>:<br>4pc Blizzard Strayer<br>ATK/Cryo/CRIT or ATK</p>
+                        <p><b>Common Teammates</b>:<br>Kazuha + Shenhe<br>Kazuha + Rosaria</p>
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <ul>
+                        <li>Ayaka’s Elemental Burst and its DPS window are the significant portion of her team’s damage and playstyle. Its accuracy, as well as Ayaka’s overall kit, has high synergy vs Frozen targets, and therefore she commonly seeks a Hydro teammate.</li>
+                        <li>Kokomi provides long lasting, AoE, off-field Hydro application. Her Bake-Kurage’s range may not literally cover the entire map, but it is as close to an <b>ideal Hydro applicator</b> as Ayaka could ask for.</li>
+                        <li>Additionally, Kokomi allows faster setups than other Hydro options due to only needing brief field time to cast her Elemental Skill.</li>
+                        <li>She can buff Ayaka via TTDS and Tenacity of the Millelith. Building for this is incredibly accessible and has a low investment cost.</li>
+                        <li>Just like Kokomi, many common teammates’ talent casts are also centered around the character model. Teams can have great control and fluidity over the Freeze AoE zone, with a character like Kazuha pulling enemies towards Bake-Kurage to maintain consistency.</li>
+                      </ul>
+                    </div>
+                  </div>
+      
+                  <div class="table-item cryo-item" id="cryo-item1">
+                    <div class="item-header">
+                      <img src="images/characters/ganyu.webp">
+                      <div class="character-sheet">
+                        <header><b>Synergy: B</b></header>
+                        <p>On-Field DPS<br>Freeze</p>
+                        <p><b>Example Weapons</b>:<br>Aqua Simulacra<br>Prototype Crescent</p>
+                      </div>
+                      <div class="character-sheet">
+                        <p><b>Artifacts</b>:<br>4pc Blizzard Strayer<br>ATK/Cryo/CRIT or ATK</p>
+                        <p><b>Common Teammates</b>:<br>Venti + Shenhe<br>Venti + Rosaria</p>
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <ul>
+                        <li>Ganyu’s Elemental Burst is powerful and long-lasting (AoE Icicles lasting 15s), and yet it can still snapshot buffs. Kokomi with TTDS and ToTM will give significant ATK buffs to her. Ganyu’s Charged Attacks also benefit more from ATK buffs, due to their increased CRIT Rate.</li>
+                        <li>Kokomi’s brief field time and fast setups also allows for easier rotations and <b>more Charged Attacks fired</b>.</li>
+                        <li>Ganyu’s damage lacks a Burst window and is more focused on constant, sustained damage output. Therefore, compared to Ayaka, she stands to gain a lot more from Kokomi refreshing Bake-Kurage with her own Burst cast; otherwise a lot of hits can lose Blizzard Strayer bonuses. The issue is that integrating the refresh is tedious and can require significant ER stat investment from Kokomi, potentially compromising with Energy-focused weapons on teammates too.</li>
+                        <li>Ganyu can also feel a bit inharmonious with Kokomi, due to her Skill dashing away from enemies, and Kokomi casting her own Skill next to the player model. In comparison, Mona and Venti cast talents slightly ahead of the player model, synergising better with Ganyu’s Skill and overall ranged playstyle.</li>
+                      </ul>
+                    </div>
+                  </div>
+      
+                  <div class="table-item cryo-item" id="cryo-item2">
+                    <div class="item-header">
+                      <img src="images/characters/shenhe.webp">
+                      <div class="character-sheet">
+                        <header><b>Synergy: A</b></header>
+                        <p>Buffer/Debuffer<br>Off-Field DPS/Battery<br>Freeze</p>
+                        <p><b>Example Weapons</b>:<br>Favonius Lance<br>Calamity Queller</p>
+                      </div>
+                      <div class="character-sheet">
+                        <p><b>Artifacts</b>:<br>4pc Noblesse Oblige<br>ATK or ER/ATK/ATK<br>ATK or ER/Cryo/CRIT</p>
+                        <p><b>Common Teammates</b>:<br>Ayaka + Kazuha</p>
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <ul>
+                        <li>Shenhe is the premier Cryo support, especially in Freeze teams.</li>
+                        <li>Unlike other units who provide personal offensive value or defensive utility while also providing Energy, Shenhe, while still offering good amounts of Energy, provides more buffs to damage dealers and rockets frontloaded performance.</li>
+                        <li>Due to Shenhe scaling with Cryo DMG dealers, a character like Kokomi consolidating roles of Hydro application, buffs, and healing is greatly appreciated, and teambuilding/gearing considerations that may compromise damage are not needed.</li>
+                        <li>Kokomi providing ATK buffs via Tenacity of the Millelith will also constantly increase Shenhe’s Icy Quill performance.</li>
+                        <li>A niche synergy is that Shenhe’s Burst reduces enemies' Physical RES, which increases the damage from Kokomi’s OHC set (though OHC is typically not used in Freeze).</li>
+                        <li>For practical synergies, Shenhe’s Skill when tapped lunges towards enemies whilst applying Cryo. This allows controlled positioning for Kokomi to later Freeze surrounding enemies from this spot.</li>
+                      </ul>
+                    </div>
+                  </div>
+      
+                  <div class="table-item cryo-item" id="cryo-item3">
+                    <div class="item-header">
+                      <img src="images/characters/rosaria.webp">
+                      <div class="character-sheet">
+                        <header><b>Synergy: A</b></header>
+                        <p>Off-Field DPS/Buffer<br>Battery<br>Freeze</p>
+                        <p><b>Example Weapons</b>:<br>Favonius Lance<br>Wavebreaker's fin</p>
+                      </div>
+                      <div class="character-sheet">
+                        <p><b>Artifacts</b>:<br>4pc Noblesse Oblige<br>4pc Blizzard Strayer<br>ATK/Cryo/CRIT</p>
+                        <p><b>Common Teammates</b>:<br>Ayaka + Kazuha</p>
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <ul>
+                        <li>Rosaria is commonly played alongside a Cryo damage dealer like Ayaka. Due to Kokomi’s healing role, Rosaria is able to freely play her role alongside a final offensive utility teammate like Kazuha. If not for Kokomi, many players would feel more comfortable with defensive utility from Diona, restricting Rosaria’s use.</li>
+                        <li>Rosaria’s Elemental Skill’s ability to pursue targets and improve positioning is very underrated and brings unquantifiable value. Similar to Shenhe, this later allows Kokomi to be comfortably placed to Freeze surrounding enemies.</li>
+                        <li>A niche synergy is that with C6, Rosaria’s Burst reduces enemies' Physical RES, which increases the damage from Kokomi’s OHC set (though OHC is typically not used in Freeze).</li>
+                        <li>Rosaria does have short cooldowns on activating her Skill and Burst, which can clash with Kokomi’s longer cooldowns by neutering Rosaria's efficiency. This is often not much of an issue though, as their most common team plays around Ayaka’s long Burst cooldown anyway.</li>
+                      </ul>
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+
+            <!-- Electro -->
+            <div class="table-item elements-item" id="elements-item3">
+              <div class="item-body">
+                <div class="text table" id="electro">
+                  <div class="table-name electro-name interactive" id="electro-name0" name="first"><b>Yae Miko</b></div>
+                  <div class="table-name electro-name interactive" id="electro-name1"><b>Fischl</b></div>
+                  <div class="table-name electro-name interactive" id="electro-name2"><b>Beidou</b></div>
+                  <div class="table-name electro-name interactive" id="electro-name3"><b>Raiden Shogun</b></div>
+                  <div class="table-name electro-name interactive" id="electro-name4"><b>Kuki Shinobu</b></div>
+                  
+                  <div class="table-item electro-item" id="electro-item0">
+                    <div class="item-header">
+                      <img src="images/characters/yae.webp">
+                      <div class="character-sheet">
+                        <header><b>Synergy: A</b></header>
+                        <p>On/Off-Field DPS<br>Electro Aura<br>Electro-Charged</p>
+                        <p><b>Example Weapons</b>:<br>Kagura's Verity<br>The Widsith</p>
+                      </div>
+                      <div class="character-sheet">
+                        <p><b>Artifacts</b>:<br>Mixed sets<br>4pc EoSF<br>ATK/Electro/CRIT</p>
+                        <p><b>Common Teammates</b>:<br>Fischl + Sucrose<br>Fischl + Kazuha</p>
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <ul>
+                        <li>Yae Miko’s Burst brings a flexible frontloaded nuke to Kokomi’s team which can pay increasing dividends the more invested Miko is.</li>
+                        <li>Kokomi can easily pass on the TTDS ATK buff to Miko before her Burst, or pass buffs with Hakushin Ring. Miko does not snapshot her abilities, which can actually be an advantage in terms of capturing Hakushin Ring’s buffs, as her damage will increase whilst off the field.</li>
+                        <li>Her Skill can be deployed near Kokomi’s Bake-Kurage. This can create a stable environment for constant damage. Their teams aren’t forced to constantly use Normal Attacks, as neither Skill triggers through them.</li>
+                      </ul>
+                    </div>
+                  </div>
+      
+                  <div class="table-item electro-item" id="electro-item1">
+                    <div class="item-header">
+                      <img src="images/characters/fischl.webp">
+                      <div class="character-sheet">
+                        <header><b>Synergy: A</b></header>
+                        <p>Off-Field DPS<br>Electro Application<br>Electro-Charged<br>Hyperbloom</p>
+                        <p><b>Example Weapons</b>:<br>Polar Star<br>The Stringless</p>
+                      </div>
+                      <div class="character-sheet">
+                        <p><b>Artifacts</b>:<br>Mixed sets<br>4pc Gilded Dreams<br>ATK/Electro/CRIT</p>
+                        <p><b>Common Teammates</b>:<br>Yae Miko + Kazuha<br>Beidou + Kazuha<br>Beidou + Sucrose</p>
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <ul>
+                        <li>Both character’s Elemental Skills are off-field deployables, and although damage from Fischl’s C6 does scale with constant Normal Attacks, proccing it efficiently is not that crucial.</li>
+                        <li>Kokomi also provides a stable base of AoE Hydro application. If Anemo grouping units can frequently Swirl the Elements together, this can increase the effectiveness of additional DMG via Fischl’s A4 Talent.</li>
+                        <li>Fischl is very <b>adaptable</b> and does not require a lot of ER investment. This is very helpful as Kokomi’s teams want to avoid doubling up on both Elements, so one character will commonly be left as the sole Hydro/Electro member.</li>
+                      </ul>
+                    </div>
+                  </div>
+      
+                  <div class="table-item electro-item" id="electro-item2">
+                    <div class="item-header">
+                      <img src="images/characters/beidou.webp">
+                      <div class="character-sheet">
+                        <header><b>Synergy: B</b></header>
+                        <p>Off-Field DPS<br>Electro Application<br>Electro-Charged<br>Hyperbloom</p>
+                        <p><b>Example Weapons</b>:<br>Wolf's Gravestone<br>Serpent Spine</p>
+                      </div>
+                      <div class="character-sheet">
+                        <p><b>Artifacts</b>:<br>Mixed sets<br>4pc EoSF<br>ATK/Electro/CRIT</p>
+                        <p><b>Common Teammates</b>:<br>Fischl + Kazuha<br>Fischl + Sucrose</p>
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <ul>
+                        <li>Beidou can provide much valued <b>AoE DMG</b> to Kokomi teams. She also brings damage reduction, as well as a shield at C1. Additional defensive utility is always appreciated.</li>
+                        <li>She also has a long lasting Elemental Burst which can snapshot buffs. Many Electro-Charged teams' consistency can be thanks to Beidou snapshotting TTDS buffs for strong sustained damage output.</li>
+                      </ul>
+                    </div>
+                  </div>
+      
+                  <div class="table-item electro-item" id="electro-item3">
+                    <div class="item-header">
+                      <img src="images/characters/raiden.webp">
+                      <div class="character-sheet">
+                        <header><b>Synergy: A</b></header>
+                        <p>Off-Field DPS<br>Electro Application<br>Hyperbloom</p>
+                        <p><b>Example Weapons</b>:<br>Dragon's Bane</p>
+                      </div>
+                      <div class="character-sheet">
+                        <p><b>Artifacts</b>:<br>4pc Gilded Dreams<br>EM/EM/EM</p>
+                        <p><b>Common Teammates</b>:<br>Nahida + Yelan<br>Nahida + Kazuha</p>
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <ul>
+                        <li>Strong in Hyperbloom teams. Whilst usually leading her own teams in an on-field role, Kokomi can effectively utilise Raiden as an off-field AoE Electro source to trigger Hyperblooms. In this role, Raiden uses a full <b>EM build</b> and just casts her Elemental Skill, with her Burst unneeded</li>
+                        <li>Raiden's Skill can trigger as fast as 0.9s per hit, but it is important to consider how the Hyperbloom reactions are still capped at 2 Cores at a time, as well as it depending on how constant Kokomi and a Dendro teammate can create the Cores. These faster hits compared to Shinobu’s may not actually mean much in practice.</li>
+                        <li>The Skill will also hit at the enemy's position, which will be conveniently close to spawning Dendro Cores. Unlike Shinobu, this also means Kokomi can utilise a bit of her range if needed.</li>
+                        <li>Overall, their biggest synergy may be to Raiden's benefit. For example, in a Hyperbloom team core of Raiden and Nahida, neither have healing or shielding. This can create a dilemma for the remaining teammates, especially as one has to be a Hydro character. Kokomi meets all conditions, and can even take on an off-field only position. Thus, she can allow an array of options for their last teammate.</li>
+                      </ul>
+                    </div>
+                  </div>
+      
+                  <div class="table-item electro-item" id="electro-item4">
+                    <div class="item-header">
+                      <img src="images/characters/shinobu.webp">
+                      <div class="character-sheet">
+                        <header><b>Synergy: A</b></header>
+                        <p>Off-Field DPS<br>Electro Application<br>Hyperbloom</p>
+                        <p><b>Example Weapons</b>:<br>Iron Sting<br>Key to Khaj-Nisut</p>
+                      </div>
+                      <div class="character-sheet">
+                        <p><b>Artifacts</b>:<br>4pc Gilded Dreams<br>EM/EM/EM</p>
+                        <p><b>Common Teammates</b>:<br>Nahida + Yelan<br>Nahida + Kazuha</p>
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <ul>
+                        <li>Strong in Hyperbloom teams. Despite normally having a slow Electro application rate due to ICD on her Elemental Skill (Grass Ring of Sanctification), each Dendro Core she hits is considered a fresh entity. As long as Kokomi and her Dendro teammate(s) are creating the Cores, this allows Shinobu to constantly trigger Hyperblooms every 1.5s in an AoE around the player model. The duration of Shinobu's Elemental Skill is 12s at C0 and 15s at C2, which makes her a very practical teammate for Kokomi.</li>
+                        <li>Whilst Shinobu usually further synergises with Hyperbloom teams due to both her healing utility and natural EM scaling via A4 Talent, this is obviously less relevant for Kokomi.</li>
+                        <li>In terms of their damage, Shinobu's Skill does tick slower than Raiden's Skill (meaning theoretically slower Hyperbloom reactions), but it can be a very insignificant difference in practice. Importantly, Shinobu can be considered more accessible as a 4* character.</li>
+                        <li>If available, Shinobu can also boost the team even more with the Key of Khaj-Nisut. Not only can this boost her own EM further than 4* weapons can, but the EM share it provides can also be very useful for common Kokomi teammates like Nahida or Kazuha.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <!-- Dendro -->
+            <div class="table-item elements-item" id="elements-item4">
+              <div class="item-body">
+                <div class="text table" id="dendro">
+                  <div class="table-name dendro-name interactive" id="dendro-name0" name="first"><b>Nahida</b></div>
+                  <div class="table-name dendro-name interactive" id="dendro-name1"><b>Traveler</b></div>
+                  <div class="table-name dendro-name interactive" id="dendro-name2"><b>Collei</b></div>
+                  <div class="table-name dendro-name interactive" id="dendro-name3"><b>Yaoyao</b></div>
+                  
+                  <div class="table-item dendro-item" id="dendro-item0">
+                    <div class="item-header">
+                      <img src="images/characters/nahida.webp">
+                      <div class="character-sheet">
+                        <header><b>Synergy: S</b></header>
+                        <p>On/Off-Field DPS<br>Support/Buffer<br>Bloom, Hyperbloom</p>
+                        <p><b>Example Weapons</b>:<br>A Thousand Floating Dreams<br>The Widsith</p>
+                      </div>
+                      <div class="character-sheet">
+                        <p><b>Artifacts</b>:<br>2ToTM + 80 EM set<br>EM/EM/CRIT or EM</p>
+                        <p><b>Common Teammates</b>:<br>Nilou + Collei<br>Nilou + Xingqiu<br>Yelan + Raiden Shogun</p>
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <ul>
+                        <li>A staple of Dendro teams, Nahida can apply <b>on-demand, sustained and strong Dendro application</b> within a massive range. She can do this entirely off-field, or supply even more Dendro application with on-field Basic Attacks. Her level of consistency is unmatched across Dendro characters, and as such she is very much appreciated in both Bloom and Hyperbloom compositions.</li>
+                        <li>Her reaction potential is further boosted by her Elemental Skill (the core of her kit) having direct EM scaling. In addition, her A4 Talent further enhances her Skill's DMG and CRIT Rate. These together allow her to <b>benefit heavily from EM investment</b>, and coupled with CRIT stats she can deal both strong reaction and non-reaction damage.</li>
+                        <li>Nahida's Elemental Skill duration being both long lasting and frequent is very helpful to Kokomi. Firstly, unless the marked enemies are defeated, there's no need to worry about it running out whilst Kokomi enters her Burst mode. Secondly, the frequency and strength of this off-field Dendro application is ample enough for consistent reactions, whether it's just Bake-Kurage solo or in tandem with Kokomi's on-field attacks. Overall, there are rarely issues with the sufficiency of Nahida's Dendro application.</li>
+                        <li>Another key synergy is role compression. As Dendro reaction-focused teams can involve 3 Elements reacting together, Kokomi's ability to take a Hydro teammate slot whilst covering the healing role is very helpful for Nahida. The fact that Kokomi can also do this all off-field allows full offensive choice for their teammates without having to compromise the team's survival.</li>
+                        <li>Nahida's Elemental Burst is also able to provide Kokomi with a huge EM Buff whenever Kokomi is on-field. The value of this can vary depending on how many reactions Kokomi is triggering in any given team. It will also increase Nahida’s own damage when Kokomi is switched out or even solely used in an off-field role.</li>
+                        <li>The main annoyance to Nahida is having to recast her Elemental Skill each wave of spawning enemies. This can interrupt Kokomi during her Burst mode.</li>
+                      </ul>
+                    </div>
+                  </div>
+      
+                  <div class="table-item dendro-item" id="dendro-item1">
+                    <div class="item-header">
+                      <img src="images/characters/lumine.webp">
+                      <div class="character-sheet">
+                        <header><b>Synergy: B</b></header>
+                        <p>Off-Field DPS<br>Support/Buffer<br>Bloom, Hyperbloom</p>
+                        <p><b>Example Weapons</b>:<br>Sacrificial Sword<br>Favonius Sword</p>
+                      </div>
+                      <div class="character-sheet">
+                        <p><b>Artifacts</b>:<br>4pc Deepwood<br>EM or ER/EM/EM<br>EM/Dendro/CRIT</p>
+                        <p><b>Common Teammates</b>:<br>Nilou + Collei<br>Nilou + Nahida</p>
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <ul>
+                        <li>Traveler has a wide AoE on their Lea Lotus Lamp created from Elemental Burst cast, which is further increased by absorbing Hydro. This will increase its range by 3x and hit AoE by 2x. This lays a good base for surrounding enemies being set up for Kokomi (and Nilou) to create many Bountiful Cores.</li>
+                        <li>When Kokomi is on-field, Traveler can also increase her EM by up to 60 through their A1 Talent.</li>
+                      </ul>
+                    </div>
+                  </div>
+      
+                  <div class="table-item dendro-item" id="dendro-item2">
+                    <div class="item-header">
+                      <img src="images/characters/collei.webp">
+                      <div class="character-sheet">
+                        <header><b>Synergy: B</b></header>
+                        <p>Off-Field DPS<br>Support/Buffer<br>Bloom, Hyperbloom</p>
+                        <p><b>Example Weapons</b>:<br>Elegy for the End<br>Sacrificial Bow</p>
+                      </div>
+                      <div class="character-sheet">
+                        <p><b>Artifacts</b>:<br>4pc Gilded Dreams<br>4pc EoSF<br>4pc Instructor<br>4pc Deepwood<br>EM/EM/EM<br>EM/Dendro/CRIT</p>
+                        <p><b>Common Teammates</b>:<br>Nilou + Traveler<br>Nilou + Nahida</p>
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <ul>
+                        <li>In Nilou Bloom teams, an <b>EQE combo</b> (w/ Sacrificial Bow) from Collei can be powerful, and noticeably spike the team’s Bountiful Core production rate and overall damage during the duration. Although real caution is needed over the recoil damage she can sustain during this on-field period, particularly with her fragile max HP, Kokomi’s sustained healing (even when prioritising EM stats) can mitigate much of this concern.</li>
+                        <li>Her Skill can be recast every 12s, which has synchrony with Kokomi’s Bake-Kurage duration and common teammate Skills like Fischl’s Oz. Despite her Boomerang + Sprout not lasting with 100% uptime, this is still very helpful in Hyperbloom teams as the reaction feeds off of continuous application from all 3 Elements</li>
+                        <li>Collei provides 60 EM to teammates at C4, as well as an extra 100 for those fortunate enough to own Elegy for the End. 4pc Instructor for an extra 120 is also optional.</li>
+                        <li>Although she provides flexibility and increases a Bloom team's frontloaded damage, Collei doesn’t really have many other areas of direct synergy with Kokomi.</li>
+                      </ul>
+                    </div>
+                  </div>
+      
+                  <div class="table-item dendro-item" id="dendro-item3">
+                    <div class="item-header">
+                      <img src="images/characters/yaoyao.webp">
+                      <div class="character-sheet">
+                        <header><b>Synergy: C+</b></header>
+                        <p>Off-Field DPS<br>Healer<br>Bloom, Hyperbloom</p>
+                        <p><b>Example Weapons</b>:<br>Favonius Lance<br>Dragon's Bane</p>
+                      </div>
+                      <div class="character-sheet">
+                        <p><b>Artifacts</b>:<br>4pc Gilded Dreams<br>Mixed Set<br>HP/HP/HP<br>EM/EM/EM<br>EM/Dendro/CRIT</p>
+                        <p><b>Common Teammates</b>:<br>Nilou + Traveler<br>Nilou + Nahida</p>
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <ul>
+                        <li>In Nilou Bloom teams, Yaoyao’s own healing can reinforce Kokomi’s healing to create more comfortable teams. Yaoyao also has increased Dendro RES whilst her Burst’s “Adeptal Legacy State” is active, making her very suitable to tanking Bloom Core explosion recoil damage</li>
+                        <li>This increase in team healing can also allow Kokomi to more easily trade HP and Healing Bonus investment for more EM stats. Furthermore, since Yaoyao can spend time effectively on-field, Kokomi rarely needs to spend much time in her Burst mode to take advantage of OHC. Overall, Yaoyao allows Kokomi to focus on building for her reaction damage.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+          </div>
+
+          <p>Wall of text</p>
+          <p>Wall of text</p>
+          <p>Wall of text</p>
+          <p>Wall of text</p>
+          <p>Wall of text</p>
+          <p>Wall of text</p>
+          <p>Wall of text</p>
+          <p>Wall of text</p>
+          <p>Wall of text</p>
+          <p>Wall of text</p>
+          <p>Wall of text</p>
+          <p>Wall of text</p>
+          <p>Wall of text</p>
+        </div>
+          
+          
+
+        </div>
+
+        
+
       </section>
           <!-- table layout -->
           <!-- <div class="text table" id="myTable">
@@ -711,6 +1365,30 @@
             <div id="myScroll-description-child" class="pressable-child" style="display: none;">
             </div>
           </div> -->
+          <!-- Character layout -->
+          <!-- <div class="table-item hydro-item" id="hydro-item0">
+            <div class="item-header">
+              <img src="images/characters/nilou2.webp">
+              <div class="character-sheet">
+                <header><b>Synergy: S</b></header>
+                <p>Off-Field DPS/On-Field DPS <br>Support/Buffer<br>Bloom</p>
+                <p><b>Example Weapons</b>:<br>Key to Khaj-Nisut<br>Iron Sting<br>Favonius Sword</p>
+              </div>
+              <div class="character-sheet">
+                <p><b>Artifacts</b>:<br>2ToTM + 80 EM set<br>HP/HP/HP</p>
+                <p><b>Common Teammates</b>:<br>Traveler + Collei<br>Nahida+Collei<br>Nahida+Yelan</p>
+              </div>
+            </div>
+            <div class="item-body">
+              <p>Due to Nilou’s unique Talent <b>Court of Dancing Petals</b>, which enhances standard Dendro Cores into Bountiful Cores, she is effectively purely designed around Bloom teams. She is also limited to just Hydro and Dendro teammates in order to activate this and other talents within her kit. Together, the goal is to generate as much AoE Dendro and Hydro application as possible, maximising Bloom detonations. Kokomi is very effective in achieving this alongside providing additional tools with her role compression.</p>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div> -->
     </main>
     <nav id="navbar">
       <header>Table of Contents</header>
@@ -720,8 +1398,9 @@
       <p class="table-of-contents-sub"><a href="#talents-priority">Talent Levelling Priority</a></p>
       <p class="table-of-contents-main"><a href="#constellations-breakdown">Constellations</a></p>
       <p class="table-of-contents-main"><a href="#artifacts-breakdown">Artifacts</a></p>
-      <p class="table-of-contents-sub"><a href="#artifacts-stats">Artifact Stats</a></p>
+      <p class="table-of-contents-sub"><a href="#artifact-stats">Artifact Stats</a></p>
       <p class="table-of-contents-main"><a href="#weapons-breakdown">Weapon Choices</a></p>
+      <p class="table-of-contents-main"><a href="#teammates">Teammates</a></p>
     </nav>
   </body>
 </html>

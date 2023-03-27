@@ -7,14 +7,13 @@ const gridBackgroundColor = getComputedStyle(document.getElementsByTagName("html
 window.onload = function() {
     
     // const talents = document.getElementsByClassName("interactive");
-    const talents = document.getElementsByClassName("talents-name");
-    handDisplayCorrectItem(talents);
-    const constellations = document.getElementsByClassName("constellations-name");
-    handDisplayCorrectItem(constellations);
-    const artifacts = document.getElementsByClassName("artifacts-name");
-    handDisplayCorrectItem(artifacts);
-    const weapons = document.getElementsByClassName("weapons-name");
-    handDisplayCorrectItem(weapons);
+    const interactive = document.getElementsByClassName("interactive");
+    handDisplayCorrectItem(interactive);
+    first = document.getElementsByName("first");
+    for(let i = 0; i < first.length; i++) {
+        // console.log(first[i].id)
+        first[i].click()
+    }
 
 
     
@@ -36,7 +35,6 @@ function displayCorrectItem() {
     const classNames = document.getElementsByClassName(idName.substring(0, idName.length - 1));
     const classItems = document.getElementsByClassName(idName.substring(0, idName.length - 5)+"item");
 
-
     for(let i = 0; i < classNames.length; i++) {
         if(i != idNum){
             classNames[i].classList.add("hover-brighten");
@@ -45,6 +43,7 @@ function displayCorrectItem() {
         }
         else {
             classNames[i].classList.remove("hover-brighten");
+            let mainColor = getComputedStyle(classNames[i]).getPropertyValue('--main-color');
             classNames[i].style.backgroundColor = mainColor;
             classItems[i].style.display = "block";
         }
@@ -55,7 +54,7 @@ function handDisplayCorrectItem(thisClass) {
     for(let i = 0; i < thisClass.length; i++) {
         thisClass[i].addEventListener("click", displayCorrectItem);
     }
-    thisClass[0].click();
+    // thisClass[0].click();
 }
 
 function makePressable(pressable) {
