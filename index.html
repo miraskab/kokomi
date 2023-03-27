@@ -55,12 +55,12 @@
           <h1>Talents breakdown</h1>
           
           <div class="text table" id="talents">
-            <div class="table-name talents-name" id="talents-name0"><b>Normal Attack</b></div>
-            <div class="table-name talents-name" id="talents-name1"><b>Elemental Skill</b></div>
-            <div class="table-name talents-name" id="talents-name2"><b>Elemental Burst</b></div>
-            <div class="table-name talents-name" id="talents-name3"><b>Ascension 1 Passive</b></div>
-            <div class="table-name talents-name" id="talents-name4"><b>Ascension 4 Passive</b></div>
-            <div class="table-name talents-name" id="talents-name5"><b>Unique Passive</b></div>
+            <div class="table-name talents-name interactive" id="talents-name0"><b>Normal Attack</b></div>
+            <div class="table-name talents-name interactive" id="talents-name1"><b>Elemental Skill</b></div>
+            <div class="table-name talents-name interactive" id="talents-name2"><b>Elemental Burst</b></div>
+            <div class="table-name talents-name interactive" id="talents-name3"><b>Ascension 1 Passive</b></div>
+            <div class="table-name talents-name interactive" id="talents-name4"><b>Ascension 4 Passive</b></div>
+            <div class="table-name talents-name interactive" id="talents-name5"><b>Unique Passive</b></div>
  
             <!-- 0th item -->
             <div class="table-item talents-item" id="talents-item0">
@@ -106,10 +106,10 @@
               </div>
               <div class="item-body">
                 <div class="item-description">
-                  <div id="talents-item1-description" class="pressable">
+                  <header id="talents-item1-description" class="pressable">
                     <div id="talents-item1-description-rotating" class="rotating"><b>></b></div>
                     <div><b>Talent Description</b></div>
-                  </div>
+                  </header>
                   <div id="talents-item1-description-child" class="pressable-child" style="display: none;">
                     <div>
                       <p>Summons a "Bake-Kurage" created from water that can heal her allies. Using this skill will apply the <b>Wet</b> status to Sangonomiya Kokomi.</p>
@@ -143,10 +143,10 @@
               </div>
               <div class="item-body">
                 <div class="item-description">
-                  <div id="talents-item2-description" class="pressable">
+                  <header id="talents-item2-description" class="pressable">
                     <div id="talents-item2-description-rotating" class="rotating"><b>></b></div>
                     <div><b>Talent Description</b></div>
-                  </div>
+                  </header>
                   <div id="talents-item2-description-child" class="pressable-child" style="display: none;">
                     <div>
                       <p>Summons the might of Watatsumi, dealing <b>Hydro DMG</b> to surrounding opponents, before robing Kokomi in a Ceremonial Garment made from the flowing waters of Sangonomiya.</p>
@@ -178,10 +178,10 @@
               </div>
               <div class="item-body">
                 <div class="item-description">
-                  <div id="talents-item3-description" class="pressable">
+                  <header id="talents-item3-description" class="pressable">
                     <div id="talents-item3-description-rotating" class="rotating"><b>></b></div>
                     <div><b>Talent Description</b></div>
-                  </div>
+                  </header>
                   <div id="talents-item3-description-child" class="pressable-child" style="display: none;">
                     <div>
                       <p>If Sangonomiya Kokomi's own Bake-Kurage are on the field when she uses <b>Nereid's Ascension</b>, the Bake-Kurage's duration will be refreshed.</p>
@@ -203,10 +203,10 @@
               </div>
               <div class="item-body">
                 <div class="item-description">
-                  <div id="talents-item4-description" class="pressable">
+                  <header id="talents-item4-description" class="pressable">
                     <div id="talents-item4-description-rotating" class="rotating"><b>></b></div>
                     <div><b>Talent Description</b></div>
-                  </div>
+                  </header>
                   <div id="talents-item4-description-child" class="pressable-child" style="display: none;">
                     <div>
                       <p>While donning the Ceremonial Garment created by Nereid's Ascension, the Normal and Charged Attack DMG Bonus Sangonomiya Kokomi gains based on her Max HP will receive a further increase based on 15% of her <b>Healing Bonus</b>.</p>
@@ -227,10 +227,10 @@
               </div>
                 <div class="item-body">
                   <div class="item-description">
-                    <div id="talents-item5-description" class="pressable">
+                    <header id="talents-item5-description" class="pressable">
                       <div id="talents-item5-description-rotating" class="rotating"><b>></b></div>
                       <div><b>Talent Description</b></div>
-                    </div>
+                    </header>
                     <div id="talents-item5-description-child" class="pressable-child" style="display: none;">
                       <div>
                         <p>Sangonomiya Kokomi has a 25% <b>Healing Bonus</b>, but a 100% decrease in <b>CRIT Rate</b>.</p>
@@ -245,37 +245,41 @@
             </div>
           </div>
 
-          <div class="text" id="combos">
-            <h2>Combos</h2>
-            <p>In her Burst mode “<b>Ceremonial Garment</b>”, Kokomi is relatively easy to pilot and you can largely do almost anything as long as you keep using Normal Attacks. Complicating Combos rarely benefits a team's performance dramatically, and actually poor execution can be a net negative. Such consequences include:</p>
-            <ul>
-              <li>running out of Stamina</li>
-              <li>poor positioning</li>
-              <li>losing procs from off-field damage dealers</li>
-            </ul>
+          
+          <div class="item-large item-description text" id="combos">
+            <h2 id="combo-description" class="pressable">
+              <div id="combo-description-rotating" class="rotating">></div>
+              <div>Combos</div>
+            </h2>
+            <div id="combo-description-child" class="pressable-child" style="display: none;">
+              <p>In her Burst mode “<b>Ceremonial Garment</b>”, Kokomi is relatively easy to pilot and you can largely do almost anything as long as you keep using Normal Attacks. Complicating Combos rarely benefits a team's performance dramatically, and actually poor execution can be a net negative. Such consequences include:</p>
+              <ul>
+                <li>running out of Stamina</li>
+                <li>poor positioning</li>
+                <li>losing procs from off-field damage dealers</li>
+              </ul>
 
-            <p>It is recommended to play on-field Kokomi in whatever manner feels comfortable for your account and your device while keeping in mind some basic reminders:</p>
-            <!-- <ul id="combo-guidelines">
-              <li>Dashing and regular repositioning has very practical use in combat. It’s helpful to not rely too much on her range, especially since her Normal Attacks make her move slightly backwards. There is also the range of her Skill and other team abilities to consider. Moreover, while Kokomi can tank enemy attacks with her healing, these movements can also aid with dodging heavy attacks that would otherwise stagger her.</li>
-              <li>Her Charged Attacks are very Stamina-intensive, and consecutive use can limit Stamina reserve for dashing.</li>
-              <li>Still, as mentioned earlier, Charged Attacks are an effective tool in applying more Hydro for both shield breaking and team reactions. They also spawn directly below the target, providing vertical range against enemies on hilichurl towers and allowing her to hit annoying targets behind fences/obstacles.</li>
-              <li>The HP and Healing Bonus scaling from Nereid's Ascension and Song of Pearls flatten the differences in the damage scaling on her Normal and Charged Attack hits. Furthermore, a lot of her output can come from the Ocean-Hued Clam set effect, which generally hits its DMG cap every 3.5s. The higher Talent multipliers of her 3rd Normal Attack hit and Charged Attack are therefore less important than they initially look.</li>
-              <li>Her Constellation 1 highly incentivizes finishing her combo with the third Normal Attack. This results in more damage AND more Hydro application.</li>
-            </ul> -->
-            <div id="combo-guidelines" class="text table">
-              <div class="table-item">Dashing and regular repositioning has very practical use in combat. It’s helpful to not rely too much on her range, especially since her Normal Attacks make her move slightly backwards. There is also the range of her Skill and other team abilities to consider. Moreover, while Kokomi can tank enemy attacks with her healing, these movements can also aid with dodging heavy attacks that would otherwise stagger her.</div>
-              <div class="table-item">Her Charged Attacks are very Stamina-intensive, and consecutive use can limit Stamina reserve for dashing.</div>
-              <div class="table-item">Still, as mentioned earlier, Charged Attacks are an effective tool in applying more Hydro for both shield breaking and team reactions. They also spawn directly below the target, providing vertical range against enemies on hilichurl towers and allowing her to hit annoying targets behind fences/obstacles.</div>
-              <div class="table-item">The HP and Healing Bonus scaling from Nereid's Ascension and Song of Pearls flatten the differences in the damage scaling on her Normal and Charged Attack hits. Furthermore, a lot of her output can come from the Ocean-Hued Clam set effect, which generally hits its DMG cap every 3.5s. The higher Talent multipliers of her 3rd Normal Attack hit and Charged Attack are therefore less important than they initially look.</div>
-              <div class="table-item">Her Constellation 1 highly incentivizes finishing her combo with the third Normal Attack. This results in more damage AND more Hydro application.</div>
-            </div>
+              <p>It is recommended to play on-field Kokomi in whatever manner feels comfortable for your account and your device while keeping in mind some basic reminders:</p>
+              <ul>
+                <li>Dashing and regular repositioning has very practical use in combat. It’s helpful to not rely too much on her range, especially since her Normal Attacks make her move slightly backwards. There is also the range of her Skill and other team abilities to consider. Moreover, while Kokomi can tank enemy attacks with her healing, these movements can also aid with dodging heavy attacks that would otherwise stagger her.</li>
+                <li>Her Charged Attacks are very Stamina-intensive, and consecutive use can limit Stamina reserve for dashing.</li>
+                <li>Still, as mentioned earlier, Charged Attacks are an effective tool in applying more Hydro for both shield breaking and team reactions. They also spawn directly below the target, providing vertical range against enemies on hilichurl towers and allowing her to hit annoying targets behind fences/obstacles.</li>
+                <li>The HP and Healing Bonus scaling from Nereid's Ascension and Song of Pearls flatten the differences in the damage scaling on her Normal and Charged Attack hits. Furthermore, a lot of her output can come from the Ocean-Hued Clam set effect, which generally hits its DMG cap every 3.5s. The higher Talent multipliers of her 3rd Normal Attack hit and Charged Attack are therefore less important than they initially look.</li>
+                <li>Her Constellation 1 highly incentivizes finishing her combo with the third Normal Attack. This results in more damage AND more Hydro application.</li>
+              </ul>
+              <!-- <div id="combo-guidelines" class="text">
+                <div class="table-item">Dashing and regular repositioning has very practical use in combat. It’s helpful to not rely too much on her range, especially since her Normal Attacks make her move slightly backwards. There is also the range of her Skill and other team abilities to consider. Moreover, while Kokomi can tank enemy attacks with her healing, these movements can also aid with dodging heavy attacks that would otherwise stagger her.</div>
+                <div class="table-item">Her Charged Attacks are very Stamina-intensive, and consecutive use can limit Stamina reserve for dashing.</div>
+                <div class="table-item">Still, as mentioned earlier, Charged Attacks are an effective tool in applying more Hydro for both shield breaking and team reactions. They also spawn directly below the target, providing vertical range against enemies on hilichurl towers and allowing her to hit annoying targets behind fences/obstacles.</div>
+                <div class="table-item">The HP and Healing Bonus scaling from Nereid's Ascension and Song of Pearls flatten the differences in the damage scaling on her Normal and Charged Attack hits. Furthermore, a lot of her output can come from the Ocean-Hued Clam set effect, which generally hits its DMG cap every 3.5s. The higher Talent multipliers of her 3rd Normal Attack hit and Charged Attack are therefore less important than they initially look.</div>
+                <div class="table-item">Her Constellation 1 highly incentivizes finishing her combo with the third Normal Attack. This results in more damage AND more Hydro application.</div>
+              </div> -->
 
-            <div id="specific-combos">
               <div class="item-description">
-                <div id="specific-combo-description" class="pressable">
+                <header id="specific-combo-description" class="pressable">
                   <div id="specific-combo-description-rotating" class="rotating"><b>></b></div>
                   <div><b>Specific Combos</b></div>
-                </div>
+                </header>
                 <div id="specific-combo-description-child" class="pressable-child" style="display: none;">
                   <div>
                     <p>N# = Corresponding number of consecutive Normal Attacks</p>
@@ -285,27 +289,75 @@
                 </div>
               </div>
 
-              <div>
-                <p><b>Using N3 or N3D is most recommended.</b></p>
-                <p>N3 - This is easy and just uses her full Normal Attack string, whilst saving any complications for practical adjustments like prior mentioned dash repositioning or dodging. This also allows her to remain in her Normal Attack animations longer, potentially allowing her to trigger more Sword Rain and Exquisite Throws from Xingqiu and Yelan. Full Burst mode target: 5N3</p>
-                <p>N3D - The N3 animation can be dash canceled for minimal improvement right after the projectile forms, but take care to learn the timing as dashing before it forms results in no damage being dealt at all. For an example comparison, whilst full left-click spam could get 5N3, efficient dash canceling can net an extra N2 before her Burst mode state expires.
-                  Full Burst mode target: 5N3D N2 (6 N3D is theoretically possible)
-                </p>
-                <!-- <iframe width="480" height="270" src="https://www.youtube.com/embed/2YvXp8d4za4?autoplay=1&mute=1&loop=1" ></iframe> -->
-                <p><b>N2W (Not recommended), N2D (Partially recommended)</b></p>
-                <p>How to perform N2W: Trigger two Normal Attacks, tap the walk button with careful timing, trigger two Normal Attacks again, repeat.
-                  Example Burst mode target: 9N2W
-                </p>
-                <p>N2 combos take advantage of her small damage differences between her hits, so getting more overall hits in can result in higher output. For example, squeezing 9N2W’s can result in a 9-10% DPS increase for Kokomi in Mono Hydro over N3 spamming, and in Electro-Charged teams it may trigger more Beidou Burst/Fischl C6 procs.</p>
-                <p>However, that doesn’t make it recommended. N2W is impractical to consistently perform for most people, and even lacks repositioning without N2D. The resulting <b>poor execution can result in net losses</b>. Further losses can occur when playing alongside off-field damage dealers like Yelan. Losing out on their hits will be a dramatic loss (Yelan’s Exquisite Throws trigger whilst in Normal Attack animations, and Kokomi’s N3 naturally has more time in the animation).</p>
-                <p>Even in the above-mentioned Mono Hydro example as a best case scenario, with the team giving her high personal damage output (⅓~ of the team's output depending on investments), she is still only one of several damage dealers, and other comps like Electro-Charged can have her dealing a lower damage share than that. 
-                  Therefore, the practical damage gain is always <b>questionable in terms of team DPS</b> for how much focus you need to execute them in otherwise relatively easy teams. Still, if stamina is available, <b>throwing in a few N2D’s to speed up a fight is helpful</b> and can be recommended. Just don’t attempt to spam it too much.</p>
-                <p>Lastly, if Constellation 1 is acquired, utilising the extra fish attack for increased damage from full N3 combos is advised regardless.</p>
-              </div>
+              <p><b>Using N3 or N3D is most recommended.</b></p>
+              <p>N3 - This is easy and just uses her full Normal Attack string, whilst saving any complications for practical adjustments like prior mentioned dash repositioning or dodging. This also allows her to remain in her Normal Attack animations longer, potentially allowing her to trigger more Sword Rain and Exquisite Throws from Xingqiu and Yelan. Full Burst mode target: 5N3</p>
+              <p>N3D - The N3 animation can be dash canceled for minimal improvement right after the projectile forms, but take care to learn the timing as dashing before it forms results in no damage being dealt at all. For an example comparison, whilst full left-click spam could get 5N3, efficient dash canceling can net an extra N2 before her Burst mode state expires.
+                Full Burst mode target: 5N3D N2 (6 N3D is theoretically possible)
+              </p>
+              <!-- <iframe width="480" height="270" src="https://www.youtube.com/embed/2YvXp8d4za4?autoplay=1&mute=1&loop=1" ></iframe> -->
+              <p><b>N2W (Not recommended), N2D (Partially recommended)</b></p>
+              <p>How to perform N2W: Trigger two Normal Attacks, tap the walk button with careful timing, trigger two Normal Attacks again, repeat.
+                Example Burst mode target: 9N2W
+              </p>
+              <p>N2 combos take advantage of her small damage differences between her hits, so getting more overall hits in can result in higher output. For example, squeezing 9N2W’s can result in a 9-10% DPS increase for Kokomi in Mono Hydro over N3 spamming, and in Electro-Charged teams it may trigger more Beidou Burst/Fischl C6 procs.</p>
+              <p>However, that doesn’t make it recommended. N2W is impractical to consistently perform for most people, and even lacks repositioning without N2D. The resulting <b>poor execution can result in net losses</b>. Further losses can occur when playing alongside off-field damage dealers like Yelan. Losing out on their hits will be a dramatic loss (Yelan's Exquisite Throws trigger whilst in Normal Attack animations, and Kokomi's N3 naturally has more time in the animation).</p>
+              <p>Even in the above-mentioned Mono Hydro example as a best case scenario, with the team giving her high personal damage output (⅓~ of the team's output depending on investments), she is still only one of several damage dealers, and other comps like Electro-Charged can have her dealing a lower damage share than that. 
+                Therefore, the practical damage gain is always <b>questionable in terms of team DPS</b> for how much focus you need to execute them in otherwise relatively easy teams. Still, if stamina is available, <b>throwing in a few N2D's to speed up a fight is helpful</b> and can be recommended. Just don't attempt to spam it too much.</p>
+              <p>Lastly, if Constellation 1 is acquired, utilising the extra fish attack for increased damage from full N3 combos is advised regardless.</p>
             </div>
+          </div>
+          
+          <div class="item-large item-description text" id="talents-priority">
+            <h2 id="talents-priority-description" class="pressable">
+              <div id="talents-priority-description-rotating" class="rotating">></div>
+              <div>Talents Priority</div>
+            </h2>
+            <div id="talents-priority-description-child" class="pressable-child" style="display:none">
+              <b>Nereid's Ascension > Bake-Kurage >> Normal Attack</b>
+              <p>Crown Elemental Burst if interested</p>
+              <p>As explained many times by now, Kokomi on field has several sources of damage, which skews perceptions of Talents. </p>
+              <p>It should be understood that, due to its ATK scaling, her Normal Attack Talent (The Shape of Water) is very low priority and even in the end game can be reasonably left at Level 6.</p>
+              <p>Kokomi's Burst, Nereid's Ascension is her most significant talent, and out of all options the most worthwhile to take to Talent Level 10 or close thereto.</p>
+              <p>Her Skill, Kurage's Oath, has relevance for all playstyles. However, in popular off-field focused teams of hers such as Freeze, her healing is generally more than satisfactory at any reasonable investment level; therefore, it's never really necessary to prioritise it to the point of being leveled the highest.</p>
+              <p>Still, be cautious of outside scaling damage sources and how significant they are. Kokomi never really makes the most from Talent level ups.</p>
+              <p>For example, with Level 9 Talents and Prototype Amber, in the Mono Hydro team with Yelan, Kazuha (no Burst), and Xingqiu, Kokomi's damage distribution against 1 enemy can be calculated to be as follows:</p>
+              <div class="text table" id="tp-table">
+                <div class="table-name"><b>E (without burst buff)</b></div>
+                <div class="table-name"><b>E (with burst buff)</b></div>
+                <div class="table-name"><b>Q (initial damage)</b></div>
+                <div class="table-name"><b>NA (without burst buff)</b></div>
+                <div class="table-name"><b>NA (with burst buff)</b></div>
+                <div class="table-name"><b>Ocean-Hued Clam</b></div>
+
+                <div class="table-item">7.3%</div>                
+                <div class="table-item">8.2%</div>                
+                <div class="table-item">3%</div>                
+                <div class="table-item">9.1%</div>                
+                <div class="table-item">47.1%</div>                
+                <div class="table-item">25.2%</div>                
+              </div>
+              <p>Take the exact numbers with a grain of salt, but use it to note how her Elemental Burst and Ocean Hued Clam (OHC) procs can make up the majority of her damage (with OHC procs being independent of Talent Level if sufficient healing is guaranteed, as each proc will hit the damage cap).</p>
+            </div>
+          </div>
+          <div>
+            <p>wall of text</p>
+            <p>wall of text</p>
+            <p>wall of text</p>
+            <p>wall of text</p>
+            <p>wall of text</p>
+            <p>wall of text</p>
+            <p>wall of text</p>
+            <p>wall of text</p>
+            <p>wall of text</p>
+            <p>wall of text</p>
+            <p>wall of text</p>
+            <p>wall of text</p>
+            <p>wall of text</p>
+          </div>
+            
+            
             
 
-          </div>
         </div>
 
       </section>

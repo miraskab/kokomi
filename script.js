@@ -6,14 +6,17 @@ const gridBackgroundColor = getComputedStyle(document.getElementsByTagName("html
 
 window.onload = function() {
     
-    const talents = document.getElementsByClassName("talents-name");
+    const talents = document.getElementsByClassName("interactive");
     handDisplayCorrectItem(talents);
 
     // let btn = document.getElementById("button");
     // let div = document.getElementById("mydiv");
     let pressable = document.getElementsByClassName("pressable");
     makePressable(pressable);
-    
+    let h2divs = document.getElementsByTagName("h2");
+    for(let i = 0; i < h2divs.length; i++){
+        h2divs[i].click();
+    }
 }
 
 function displayCorrectItem() {
@@ -52,6 +55,9 @@ function makePressable(pressable) {
         let rt = document.getElementById(btn.id+"-rotating")
         btn.addEventListener('click', () => {
             if(div.style.display === "none") {
+                btn.classList.remove("rounded-bottom");
+                btn.classList.add("rounded-bottom-reverse");
+
                 div.classList.add("appear");
                 div.style.display = "block";
                 rt.style.animationName = "rotate-clockwise-90";
@@ -59,15 +65,20 @@ function makePressable(pressable) {
                 setTimeout(function() {
                     // div.style.opacity = "1";
                     div.classList.remove("appear");
+
                 }, 400);
             }
             else {
+                btn.classList.remove("rounded-bottom-reverse")
+                btn.classList.add("rounded-bottom");
+
                 div.classList.add("disappear");
                 rt.style.animationName = "rotate-counter-clockwise-90";
                 setTimeout(function() {
                     // div.style.opacity = "0";
                     div.style.display = "none";
                     div.classList.remove("disappear")
+                    btn.classList.remove("rounded-bottom")
                 }, 400)
             }
         })

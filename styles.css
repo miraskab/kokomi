@@ -10,6 +10,7 @@ html, body {
     --main-color: rgb(103, 150, 243);
     --background-color: rgba(12, 12, 12, 0.92);
     --grid-background-color: rgba(30, 30, 30, 0.8);
+    --scroll-down-height: 400px;
     /* --background-color: rgba(39, 36, 58, 0.97);
     --grid-background-color: rgba(33, 32, 44, 0.8); */
 
@@ -156,7 +157,8 @@ iframe {
     font-size: 15px;
 }
 .hover-brighten:hover {
-    filter: brightness(150%);
+    filter: brightness(250%);
+    cursor: pointer;
 }
 .table-item {
     background-color: var(--grid-background-color);
@@ -177,7 +179,7 @@ iframe {
     /* border-bottom: 1px solid var(--text-color); */
 }
 #combo-guidelines .table-item{
-    border: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
 }
 
 .item-header {
@@ -222,6 +224,10 @@ iframe {
     flex-direction: column;
     gap: 0;
 }
+.item-description h2 {
+    margin: 0;
+    padding: 10px 0;
+}
 .pressable {
     display: flex;
     flex-direction: row;
@@ -229,7 +235,12 @@ iframe {
     background-color: var(--main-color);
     padding: 3px 20px;
     user-select: none;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
+
 .pressable:hover {
     cursor: pointer;
 }
@@ -239,7 +250,7 @@ iframe {
     padding: 0 15px;
     font-size: 14px;
 }
-.pressable-child div {
+.pressable-child > div {
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -251,11 +262,43 @@ iframe {
     animation-duration: 0.4s;
     animation-fill-mode: forwards;
 }
-#combo-guidelines {
+.item-large {
+    /* border: 1px solid var(--text-color); */
+    padding-top: 20px;
+    --scroll-down-height: 1500px;
+}
+.item-large ul {
+    padding-left: 16px;
+}
+.item-large > .pressable {
+    padding: 10px 20px;
+    /* border-bottom-left-radius: 0%; */
+    /* border-bottom-right-radius: 0%; */
+}
+
+.item-large > .pressable-child {
+    background-color: var(--grid-background-color);
+    padding: 10px 20px;
+    font-size: 15px;
+}
+/* #combo-guidelines {
     margin: 15px;
 }
 #combo-guidelines li {
     margin-bottom: 12px;
+} */
+
+#tp-table {
+    display: grid;
+    grid-template-areas: 
+        '. . . . . .'
+        '. . . . . .';
+    /* border: 1px var(--main-color) solid; */
+    /* border-bottom: 1px solid var(--text-color); */
+}
+#tp-table .table-item, #tp-table .table-name {
+    border: 1px solid white;
+    text-align: center;
 }
 
 .appear {
@@ -270,10 +313,10 @@ iframe {
 }
 @keyframes appear {
     from {opacity: 0; max-height: 0px;}
-    to {opacity: 1; max-height: 400px;}
+    to {opacity: 1; max-height: var(--scroll-down-height);}
 }
 @keyframes disappear {
-    from {opacity: 1; max-height: 400px;}
+    from {opacity: 1; max-height: var(--scroll-down-height);}
     to {opacity: 0; max-height: 0px; display: none;}
 }
 
@@ -285,7 +328,24 @@ iframe {
     from {rotate: 90deg;}
     to {rotate: 0deg;}
 }
-
+.rounded-bottom {
+    animation-name: round-bottom;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+.rounded-bottom-reverse {
+    animation-name: round-bottom-reverse;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;    
+}
+@keyframes round-bottom {
+    from {border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;}
+    to {border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;}
+}
+@keyframes round-bottom-reverse {
+    from {border-bottom-right-radius: 15px; border-bottom-left-radius: 15px;}
+    to {border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;}
+}
 #navbar {
     position: fixed;
     top: 60px;
