@@ -14,8 +14,11 @@ html, body {
     --scroll-down-height: 400px;
     /* --background-color: rgba(39, 36, 58, 0.97);
     --grid-background-color: rgba(33, 32, 44, 0.8); */
-
 }
+/* body {
+    display: flex;
+    align-items: flex-start;
+} */
 div {
     padding: 0;
     margin: 0;
@@ -386,6 +389,10 @@ iframe {
     margin-bottom: 6px;
 }
 /* replace #hydro with class */
+.table .table {
+    padding: 0;
+    column-gap: 0px;
+}
 #elements .item-body {
     padding: 0;
 }
@@ -544,10 +551,11 @@ iframe {
       padding: 0;
       margin: 0 10px;
       background-color: transparent;
+
     }
-    /* #navbar {
+    #navbar {
         display: none;
-    } */
+    }
     .table {
         padding: 0 3px;
         margin: 0;
@@ -592,8 +600,15 @@ iframe {
         font-size: 11px;
     }
   }
-@media only screen and (max-width: 1420px){
+@media only screen and (max-width: 1420px) and (min-width: 601px){
     #navbar {
         display: none;
+    }
+    /* html {
+        transform: scale(0.7);
+    } */
+    body {
+        zoom: 0.6;
+        /* -moz-transform: scale(0.7); */
     }
 }
