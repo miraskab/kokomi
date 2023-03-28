@@ -15,6 +15,9 @@ window.onload = function() {
         first[i].click()
     }
 
+    let test = document.getElementsByTagName("html")[0];
+    console.log(test.offsetWidth);
+
 
     
     // let btn = document.getElementById("button");

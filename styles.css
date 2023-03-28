@@ -40,13 +40,13 @@ b {
     padding: 0 35px;
 }
 
-#introduction-talents {
+/* #introduction-talents {
     background-image: url(images/5.png);
 }
 #constellations-artifacts-talents {
     background-image: url(images/4.png);
-}
-#teammates {
+} */
+.main-section {
     background-image: url(images/5.png);
 }
 .main-section {
@@ -103,7 +103,7 @@ iframe {
 #image {
     margin: 0 auto;
     max-width: 100%;
-    min-width: 350px;
+    /* min-width: 350px; */
     height: auto;
     object-fit: contain;
     display: block;
@@ -157,9 +157,6 @@ iframe {
     border: 1px solid var(--main-color)
 }
 
-#talents .table-name {
-    padding: 5px 10px;
-}
 .table-name {
     display: flex;
     justify-content: center;
@@ -168,7 +165,8 @@ iframe {
     border-top: 1px solid var(--text-color);
     border-left: 1px solid var(--text-color);
     border-right: 1px solid var(--text-color);
-    font-size: 15px;
+    padding: 5px 10px;
+    /* font-size: 15px; */
 }
 .hover-brighten:hover {
     filter: brightness(250%);
@@ -183,13 +181,16 @@ iframe {
     grid-area: talents-item;
     /* border: 1px solid var(--text-color); */
 }
+.table {
+    column-gap: 4px;
 
+}
 #talents {
     display: grid;
+    /* column-gap: 4px; */
     grid-template-areas: 
         '. . . . . .'
         'talents-item talents-item talents-item talents-item talents-item talents-item';
-    column-gap: 4px;
     /* border: 1px var(--main-color) solid; */
     /* border-bottom: 1px solid var(--text-color); */
 }
@@ -230,14 +231,12 @@ iframe {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
+.table .item-header {
+    /* padding: 0;
+    padding-top: 10px; */
+}
 
 
-@media only screen and (max-width: 600px) {
-    .content {
-      width: 350px;
-      min-width: none;
-    }
-  }
 
 .item-description {
     display: flex;
@@ -327,22 +326,20 @@ iframe {
     grid-template-areas: 
         '. . . . . .'
         'constellations-item constellations-item constellations-item constellations-item constellations-item constellations-item';
-    column-gap: 4px;
+    /* column-gap: 4px; */
     /* border: 1px var(--main-color) solid; */
     /* border-bottom: 1px solid var(--text-color); */
 }
-#constellations .table-name {
-    padding: 5px 10px;
-}
+
 #constellations .subtitle {
-    font-size: 14px;
+    /* font-size: 14px; */
 }
 .artifacts-item {
     grid-area: artifacts-item;
 }
 #artifacts {
     display: grid;
-    column-gap: 4px;
+    /* column-gap: 4px; */
 
     grid-template-areas: 
         '. . . .'
@@ -353,7 +350,7 @@ iframe {
 }
 #weapons {
     display: grid;
-    column-gap: 4px;
+    /* column-gap: 4px; */
 
     grid-template-areas: 
         '. . . . . .'
@@ -363,10 +360,13 @@ iframe {
     max-width: 60px;
     object-fit: fill;
 }
+#weapons .item-header {
+    margin-bottom: 0;
+}
 .elements-item {
     grid-area: elements-item;
 }
-#elements img {
+#elements > .table-name img {
     max-width: 45px;
 }
 #elements {
@@ -403,7 +403,10 @@ iframe {
 #elements > .table-item .table {
     margin: 0;
 }
-#elements .item-body img {
+#elements > .table-item .item-body .table-item{
+    padding: 0 20px;
+}
+.character-img {
     max-width: 160px;
 }
 #elements .item-body ul {
@@ -515,4 +518,82 @@ iframe {
 .table-of-contents-sub {
     margin: 7px 0px 0px 15px;
     font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    html, body {
+        min-width: 0px;
+        /* --background-color: rgb(26, 26, 35); */
+        /* --background-color: red; */
+        --background-color: rgb(30, 30, 30);
+        --grid-background-color: rgba(45, 45, 45, 0.8);
+        background-color: var(--background-color);
+
+
+    }
+    body {
+        /* background-color: var(--grid-background-color); */
+        /* background-color: red; */
+    }
+    .main-section {
+        background-image: none;
+    }
+    .content {
+      min-width: 0px;
+      width: auto;
+      padding: 0;
+      margin: 0 10px;
+      background-color: transparent;
+    }
+    /* #navbar {
+        display: none;
+    } */
+    .table {
+        padding: 0 3px;
+        margin: 0;
+        column-gap: 2px;
+    }
+    .table .table {
+        padding: 0;
+        column-gap: 0px;
+    }
+    .table-name {
+        padding: 3px;
+        font-size: 10px;
+    }
+    #elements > .table-name img {
+    max-width: 30px;
+    }
+    .character-img {
+        max-width: 20%;
+    }
+    h1 {
+        font-size: 25px;
+        padding: 15px;
+        margin-top: 30px;
+    }
+    .character-sheet {
+        font-size: 10px;
+    }
+    #elements .item-body .item-header {
+        margin-right: 0;
+    }
+    #elements > .table-item .item-body .table-item{
+        padding: 0 5px;
+    }
+    #elements > .table-item .item-body .item-header {
+        padding: 0;
+        padding-top: 10px;
+    }
+    .text {
+        font-size: 13px;
+    }
+    .subtitle {
+        font-size: 11px;
+    }
+  }
+@media only screen and (max-width: 1420px){
+    #navbar {
+        display: none;
+    }
 }
