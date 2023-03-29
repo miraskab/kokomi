@@ -90,6 +90,8 @@ h2 {
 iframe {
     margin: 0 auto;
     display: block;
+    width: 480px;
+    height: 270px;
 }
 
 #img-div {
@@ -111,13 +113,13 @@ iframe {
     object-fit: contain;
     display: block;
 }
-#pros {
+.pros {
     grid-area: pros;
 }
-#cons {
+.cons {
     grid-area: cons;
 }
-#pros, #cons {
+.pros, .cons {
     display: flex;
     align-items: center;
 
@@ -147,6 +149,7 @@ iframe {
         'cons .'
         'cons .';
     background-color: var(--grid-background-color);
+    column-gap: 0px;
 }
 #pros-cons-description-child {
     padding: 0;
@@ -155,7 +158,7 @@ iframe {
     margin: 0;
     padding: 0;
 }
-#pros-cons-table div {
+.pros-cons div {
     padding: 15px 20px;
     border: 1px solid var(--main-color)
 }
@@ -178,7 +181,7 @@ iframe {
 .table-item {
     background-color: var(--grid-background-color);
     padding: 10px 10px;
-    display: block;
+    display: none;
 }
 #talents .table-item {
     grid-area: talents-item;
@@ -253,6 +256,7 @@ iframe {
 .pressable {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 15px;
     background-color: var(--main-color);
     padding: 3px 20px;
@@ -315,6 +319,7 @@ iframe {
     grid-template-areas: 
         '. . . . . .'
         '. . . . . .';
+    column-gap: 0px;
     /* border: 1px var(--main-color) solid; */
     /* border-bottom: 1px solid var(--text-color); */
 }
@@ -375,7 +380,7 @@ iframe {
 #elements {
     --main-color: rgb(70, 70, 70);
     display: grid;
-    /* column-gap: 4px; */
+    column-gap: 0px;
     grid-template-areas: 
         '. . . . .'
         'elements-item elements-item elements-item elements-item elements-item';
@@ -389,7 +394,7 @@ iframe {
     margin-bottom: 6px;
 }
 /* replace #hydro with class */
-.table .table {
+#elements .table {
     padding: 0;
     column-gap: 0px;
 }
@@ -454,6 +459,119 @@ iframe {
     grid-template-areas: 
         '. . . . .'
         'table-item table-item table-item table-item table-item';
+}
+
+
+.teams-item .item-header > img {
+    max-width: 100%;
+}
+#ec-example4-child > img {
+    max-width: 100%;
+}
+.stats-img {
+    max-width: 80px;
+}
+#teams .table {
+    column-gap: 0px;
+}
+.teams-item {
+    grid-area: table-item;
+}
+#teams {
+    display: grid;
+    grid-template-areas: 
+        '. . . . .'
+        'table-item table-item table-item table-item table-item';
+}
+
+
+.team-stats {
+    display: grid;
+    grid-template-areas: 
+        '. . . . .'
+        'wep . . . .'
+        'arti . . . .'
+        'stat . . . .'
+        'er . . . .';
+}
+#teams ul {
+    padding-left: 16px;
+}
+#teams .pressable-child {
+    padding: 0;
+}
+#teams .pressable-child > div {
+    padding-top: 0;
+}
+.team-stats > div {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid var(--main-color)
+}
+.team-stats > img {
+    /* border: 1px solid var(--text-color) */
+}
+.team-stats-img {
+    grid-area: team-img;
+}
+.team-stats-wep {
+    grid-area: wep;
+}
+.team-stats-arti {
+    grid-area: arti;
+}
+.team-stats-stat {
+    grid-area: stat;
+}
+.team-stats-er {
+    grid-area: er;
+}
+#teams .subtitle {
+    text-align: center  ;
+}
+#teams .pressable-child p {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+#bloom-pros-cons, #hyperbloom-pros-cons {
+    display: grid;
+    grid-template-areas: 
+        'pros .'
+        'pros .'
+        'pros .'
+        'cons .'
+        'cons .'
+        'cons .';
+}
+
+#monohydro-pros-cons {
+    display: grid;
+    grid-template-areas: 
+    'pros .'
+    'pros .'
+    'pros .'
+    'cons .'
+    'cons .'
+    'cons .'
+    'cons .';
+}
+#ec-pros-cons{
+    display: grid;
+    grid-template-areas: 
+    'pros .'
+    'pros .'
+    'pros .'
+    'pros .'
+    'cons .'
+    'cons .'
+    'cons .';
+}
+#teams-item4 img {
+    max-width: 100%
 }
 .appear {
     animation-name: appear;
@@ -561,7 +679,7 @@ iframe {
         margin: 0;
         column-gap: 2px;
     }
-    .table .table {
+    #elements .table {
         padding: 0;
         column-gap: 0px;
     }
@@ -594,13 +712,39 @@ iframe {
         padding-top: 10px;
     }
     .text {
-        font-size: 13px;
+        font-size: 12px;
     }
     .subtitle {
         font-size: 11px;
     }
+    .stats-img {
+        max-width: 40px;
+    }
+    .item-large > .pressable-child {
+        font-size: 11px;
+    }
+    .team-stats {
+        padding: 0px;
+    }
+    .team-stats > div {
+        padding: 2px;
+    }
+    .item-body {
+        padding: 2px 0;
+    }
+    #teams .pressable-child {
+        font-size: 8px;
+    }
+    #teams .pressable-child p {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    iframe {
+        width: 272px;
+        height: 153px;
+    }
   }
-@media only screen and (max-width: 1420px) and (min-width: 601px){
+@media only screen and (max-width: 1420px) and (min-width: 601px) and (orientation: landscape) and (max-height: 500px){
     #navbar {
         display: none;
     }
@@ -610,5 +754,10 @@ iframe {
     body {
         zoom: 0.6;
         /* -moz-transform: scale(0.7); */
+    }
+}
+@media only screen and (max-width: 1420px) and (min-width: 601px) {
+    #navbar {
+        display: none;
     }
 }
