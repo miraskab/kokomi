@@ -3,7 +3,6 @@ const headerColor = getComputedStyle(document.getElementsByTagName("html")[0]).g
 const textColor = getComputedStyle(document.getElementsByTagName("html")[0]).getPropertyValue('--text-color');
 const backgroundColor = getComputedStyle(document.getElementsByTagName("html")[0]).getPropertyValue('--background-color');
 const gridBackgroundColor = getComputedStyle(document.getElementsByTagName("html")[0]).getPropertyValue('--grid-background-color');
-
 window.onload = function() {
     
     // const talents = document.getElementsByClassName("interactive");
@@ -25,6 +24,8 @@ window.onload = function() {
     let pressable = document.getElementsByClassName("pressable");
     makePressable(pressable);
 
+    let navbarElements = document.getElementsByName("navbar-mobile-button")
+    navbarMobileCloseOnPress(navbarElements);
     // let h2divs = document.getElementsByTagName("h2");
     // for(let i = 0; i < h2divs.length; i++){
     //     h2divs[i].click();
@@ -66,6 +67,7 @@ function makePressable(pressable) {
         let div = document.getElementById(btn.id+"-child")
         let rt = document.getElementById(btn.id+"-rotating")
         btn.addEventListener('click', () => {
+            console.log(btn)
             if(div.style.display === "none") {
                 btn.classList.remove("rounded-bottom");
                 btn.classList.add("rounded-bottom-reverse");
@@ -93,6 +95,16 @@ function makePressable(pressable) {
                     btn.classList.remove("rounded-bottom")
                 }, 400)
             }
+        })
+    }
+}
+
+function navbarMobileCloseOnPress(navbarElements) {
+    let header = document.getElementById("navbar-mobile-description")
+    for(let i = 0; i < navbarElements.length; i++) {
+        let btn = navbarElements[i];
+        btn.addEventListener('click', () => {
+            header.click();
         })
     }
 }

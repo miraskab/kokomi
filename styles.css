@@ -237,12 +237,6 @@ iframe {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
-.table .item-header {
-    /* padding: 0;
-    padding-top: 10px; */
-}
-
-
 
 .item-description {
     display: flex;
@@ -339,9 +333,6 @@ iframe {
     /* border-bottom: 1px solid var(--text-color); */
 }
 
-#constellations .subtitle {
-    /* font-size: 14px; */
-}
 .artifacts-item {
     grid-area: artifacts-item;
 }
@@ -511,9 +502,7 @@ iframe {
     text-align: center;
     border: 1px solid var(--main-color)
 }
-.team-stats > img {
-    /* border: 1px solid var(--text-color) */
-}
+
 .team-stats-img {
     grid-area: team-img;
 }
@@ -645,6 +634,28 @@ iframe {
     font-size: 15px;
 }
 
+#navbar-mobile {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0px;
+    display: none;
+}
+#navbar-mobile h2 {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+#navbar-mobile .pressable-child {
+    background-color: var(--background-color);
+
+}
+#navbar-mobile a {
+    color: var(--text-color);
+
+}
 @media only screen and (max-width: 600px) {
     html, body {
         min-width: 0px;
@@ -656,9 +667,11 @@ iframe {
 
 
     }
+    #navbar-mobile .pressable-child {
+        font-size: 18px;
+    }
     body {
-        /* background-color: var(--grid-background-color); */
-        /* background-color: red; */
+        padding-top: 40px;
     }
     .main-section {
         background-image: none;
@@ -759,5 +772,11 @@ iframe {
 @media only screen and (max-width: 1420px) and (min-width: 601px) {
     #navbar {
         display: none;
+    }
+  
+}
+@media only screen and (max-width: 1420px) {
+    #navbar-mobile {
+        display: block;
     }
 }
