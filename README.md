@@ -87,7 +87,7 @@ Grid's incredible functionality
 </div>
 ```
 
-Meanwhile, in CSS, all the table heads stand atop, whilst all the table item elements are assigned to the same to the same grid area. Normally, this would make them all overlap, but by hiding all but, it is possible to achieve a table with several table heads, pressing each one of which makes a corresponding item to appear.
+Meanwhile, in CSS, all the table heads stand atop, whilst all the table item elements are assigned to the same to the same grid area. Normally, this would make them all overlap, but by hiding all but one, it is possible to achieve a table with several table heads, pressing each one of which makes a corresponding item to appear.
 ```css
 #talents .table-item {
     grid-area: talents-item;
