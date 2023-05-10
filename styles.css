@@ -185,7 +185,6 @@ iframe {
 }
 #talents .table-item {
     grid-area: talents-item;
-    /* border: 1px solid var(--text-color); */
 }
 .table {
     column-gap: 4px;
@@ -193,12 +192,9 @@ iframe {
 }
 #talents {
     display: grid;
-    /* column-gap: 4px; */
     grid-template-areas: 
         '. . . . . .'
         'talents-item talents-item talents-item talents-item talents-item talents-item';
-    /* border: 1px var(--main-color) solid; */
-    /* border-bottom: 1px solid var(--text-color); */
 }
 #combo-guidelines .table-item{
     border-bottom: 1px solid var(--main-color);
@@ -656,6 +652,12 @@ iframe {
     color: var(--text-color);
 
 }
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     html, body {
         min-width: 0px;
