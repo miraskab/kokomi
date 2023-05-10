@@ -1,6 +1,6 @@
-# Minesweeper - an HTML solution
+# Character Guider
 
-This is a minesweeper application made to work on browsers. 
+This is a Kokomi character guide for Genshin Impact 
 
 ## Table of contents
 
